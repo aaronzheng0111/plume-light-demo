@@ -110,4 +110,6 @@ case 'confirm-reset':document.getElementById('dialog').close();resetDemo(id);bre
 window.addEventListener('storage',e=>{if(e.key!==KEY||state.processing||!e.newValue)return;try{const s=JSON.parse(e.newValue);if(s.schema===1){state=s;render();}}catch(_){}});
 window.PlumeLight={getState:()=>clone(state),demand,validateDeclaration,aggregateBaggage,forecastCapacity,quoteService,checkApplicationDeadline,validateService,saveDeclaration,recordHandover,completeService,resetDemo};
 persist();render();
-</script></body></html>
+</script>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "30d82e6d2f5b47449adcf2cdc539811e"}'></script><!-- End Cloudflare Web Analytics -->
+</body></html>
