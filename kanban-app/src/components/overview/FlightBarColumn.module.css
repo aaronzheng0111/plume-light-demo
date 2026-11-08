@@ -1,0 +1,32 @@
+.col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  background: transparent;
+  border: 1px dashed transparent;
+  border-radius: 6px;
+  padding: 4px 0 8px;
+  min-width: 0;
+}
+
+.selected {
+  background: var(--pale);
+  border-color: var(--green);
+}
+
+.bar {
+  width: 100%;
+  height: 270px;
+  overflow: visible;
+}
+
+.flight {
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.dep {
+  font-size: 11px;
+  color: var(--muted);
+}

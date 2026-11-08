@@ -1,0 +1,41 @@
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 12px 14px;
+}
+
+.card h3 { margin: 0 0 8px; font-size: 15px; }
+
+.row {
+  display: block;
+  width: 100%;
+  text-align: left;
+  border: 0;
+  border-bottom: 1px solid var(--line);
+  background: transparent;
+  padding: 9px 8px;
+  border-radius: 6px;
+}
+
+.sel { background: var(--pale); }
+
+.head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.head b { font-size: 16px; }
+.grow { flex: 1; }
+.note { color: var(--muted); font-size: 12px; margin-top: 4px; }
+
+.tag {
+  display: inline-block;
+  font-size: 11px;
+  padding: 0 6px;
+  border-radius: 3px;
+  border: 1px solid var(--line);
+  color: var(--muted);
+  background: #f7f9f9;
+}

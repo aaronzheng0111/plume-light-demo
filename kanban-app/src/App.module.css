@@ -1,0 +1,29 @@
+.shell {
+  min-height: 100vh;
+  background: var(--paper);
+}
+
+.wrap {
+  padding: 16px 24px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  min-width: 0;
+}
+
+@media (max-width: 800px) {
+  .wrap { padding: 12px 12px 20px; }
+}
+
+.note,
+.error {
+  color: var(--muted);
+}
+
+.error { color: var(--bad); }
+
+.disclaimer {
+  color: var(--muted);
+  font-size: 12px;
+  margin: 8px 0 0;
+}

@@ -1,0 +1,22 @@
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 12px 14px 10px;
+  min-width: 0;
+}
+
+.card h3 { margin: 0 0 8px; font-size: 15px; }
+
+.scroller {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.svg {
+  display: block;
+  width: 100%;
+  min-width: 860px;
+  height: auto;
+  overflow: visible;
+}
