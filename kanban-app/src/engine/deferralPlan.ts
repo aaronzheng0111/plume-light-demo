@@ -38,6 +38,7 @@ export function listCandidateFlights(
       const dep = milliseconds(flight.dep);
       return (
         flight.id !== origin.id &&
+        flight.sector === origin.sector &&
         dep > originDep &&
         hktCalendarDay(flight.dep) <= windowEndDay
       );

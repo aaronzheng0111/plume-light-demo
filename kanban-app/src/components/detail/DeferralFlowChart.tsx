@@ -1,3 +1,4 @@
+import { formatSectorCode } from "../../config/sectors";
 import { formatDep, formatIntPct, formatKg } from "../../format/display";
 import { useI18n } from "../../i18n/useI18n";
 import type { CandidateFlightView, CandidateRejectReason, DeferralPlan, HoldLoadView } from "../../types/kanban";
@@ -14,8 +15,8 @@ const X2 = 400;
 const W2 = 20;
 const X3 = 870;
 const CARD_W = 500;
-const CARD_H = 44;
-const CARD_GAP = 12;
+const CARD_H = 54;
+const CARD_GAP = 22;
 const KG_SCALE = 0.11;
 const FONT = '-apple-system, BlinkMacSystemFont, "PingFang TC", "Noto Sans CJK TC", "Microsoft JhengHei", sans-serif';
 
@@ -71,15 +72,15 @@ function CandidateCard({
         stroke={accepted ? "#2f9e6b" : "#d5dedc"}
         strokeWidth={accepted ? 2 : 1}
       />
-      <text x={x + 14} y={y + 19} fontSize={14} fontWeight={700} fill="#17302e" fontFamily={FONT}>
+      <text x={x + 16} y={y + 21} fontSize={14} fontWeight={700} fill="#17302e" fontFamily={FONT}>
         {candidate.flightId}
       </text>
-      <text x={x + 14} y={y + 35} fontSize={11} fill="#5d6f6d" fontFamily={FONT}>
+      <text x={x + 16} y={y + 37} fontSize={11} fill="#5d6f6d" fontFamily={FONT}>
         {formatDep(candidate.dep)}
       </text>
       <rect
-        x={x + 96}
-        y={y + 13}
+        x={x + 100}
+        y={y + 15}
         width={62}
         height={18}
         rx={4}
@@ -87,8 +88,8 @@ function CandidateCard({
         stroke={accepted ? "none" : color}
       />
       <text
-        x={x + 127}
-        y={y + 26}
+        x={x + 131}
+        y={y + 28}
         textAnchor="middle"
         fontSize={11}
         fontWeight={700}
@@ -98,8 +99,8 @@ function CandidateCard({
         {accepted ? t("kb.candidate.accept") : t("kb.candidate.nogo")}
       </text>
       <text
-        x={x + 170}
-        y={y + 27}
+        x={x + 176}
+        y={y + 29}
         fontSize={13}
         fill={accepted ? "#17302e" : "#5d6f6d"}
         fontWeight={accepted ? 700 : 400}
@@ -141,9 +142,9 @@ export function DeferralFlowChart({
   const srcX = X2 + W2;
   const srcY = splitY[2];
   const srcH = heights[2];
-  const residualY = srcY + srcH + 38;
+  const splitBottom = splitY[2] + heights[2];
   const cardsBottom = plan.candidates.length === 0 ? 0 : cardY(plan.candidates.length - 1) + CARD_H;
-  const viewH = Math.max(290, residualY + 16, cardsBottom + 16);
+  const viewH = Math.max(300, splitBottom + 24, cardsBottom + 24);
   const allocated = plan.candidates.filter((candidate) => candidate.allocatedKg > 0);
   const rejected = plan.candidates.filter((candidate) => candidate.decision === "NO_GO");
 
@@ -190,7 +191,7 @@ export function DeferralFlowChart({
             {t("kb.flow.split")}
           </text>
           <text x={870} y={14} fontSize={12} fill="#5d6f6d" fontWeight={700} fontFamily={FONT}>
-            {t("kb.flow.candidates")} ({windowDays}D, {sector.replace("-", "→")})
+            {t("kb.flow.candidates")} ({windowDays}D, {formatSectorCode(sector)})
           </text>
           <rect x={X1} y={Y0} width={W1} height={totalH} fill="#2f6fb5" />
           <text x={X1 + W1 / 2} y={Y0 + totalH / 2 - 6} textAnchor="middle" fontSize={14} fill="#fff" fontWeight={700} fontFamily={FONT}>
@@ -295,13 +296,15 @@ export function DeferralFlowChart({
               t={t}
             />
           ))}
-          {plan.residualKg > 0 ? (
-            <text x={srcX} y={residualY} fontSize={12} fill="#d6453d" fontWeight={700} fontFamily={FONT}>
-              RESIDUAL {formatKg(plan.residualKg)} kg：{t("kb.flow.residualNote")}
-            </text>
-          ) : null}
         </svg>
       </div>
+      {plan.residualKg > 0 ? (
+        <p className={styles.residual}>
+          <b>RESIDUAL {formatKg(plan.residualKg)} kg</b>
+          {" · "}
+          {t("kb.flow.residualNote")}
+        </p>
+      ) : null}
     </section>
   );
 }

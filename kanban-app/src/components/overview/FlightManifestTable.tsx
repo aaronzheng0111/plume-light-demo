@@ -1,3 +1,4 @@
+import { formatSectorCode } from "../../config/sectors";
 import { formatDep, formatKg, formatPct } from "../../format/display";
 import { useI18n } from "../../i18n/useI18n";
 import type { DeferralPlan, HoldLoadView } from "../../types/kanban";
@@ -35,6 +36,7 @@ export function FlightManifestTable({
         <thead>
           <tr>
             <th>{t("kb.table.flight")}</th>
+            <th>{t("kb.table.sector")}</th>
             <th>{t("kb.table.dep")}</th>
             <th>{t("kb.table.acft")}</th>
             <th className={styles.num}>{t("kb.table.seats")}</th>
@@ -56,6 +58,7 @@ export function FlightManifestTable({
               onClick={() => onSelectFlight(load.flightId)}
             >
               <td><b>{load.flightId}</b></td>
+              <td>{formatSectorCode(load.sector)}</td>
               <td>{formatDep(load.dep)}</td>
               <td>{load.aircraft}</td>
               <td className={styles.num}>{load.seats}</td>

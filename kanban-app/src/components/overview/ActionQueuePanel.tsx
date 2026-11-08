@@ -20,27 +20,29 @@ export function ActionQueuePanel({
       <h3>
         {t("kb.queue.title")} <span className={styles.note}>{t("kb.queue.sort")}</span>
       </h3>
-      {items.map((item) => (
-        <button
-          key={item.flightId}
-          type="button"
-          className={`${styles.row} ${selectedFlightId === item.flightId ? styles.sel : ""}`}
-          onClick={() => onSelectFlight(item.flightId)}
-        >
-          <div className={styles.head}>
-            <b>{item.flightId}</b>
-            <StatusBadge status={item.status} loadRatio={item.weightLoadRatio} />
-            <span className={styles.tag}>{formatCountdown(item.hoursToDeparture)}</span>
-            <span className={styles.grow} />
-            <AssessmentBadge assessment={item.assessment} />
-          </div>
-          <div className={styles.note}>
-            {item.assessment === "MONITOR"
-              ? `${formatIntPct(item.weightLoadRatio)} · ${t("kb.assess.monitor")}`
-              : `${t("kb.metric.deficit")} ${formatKg(item.deficitKg)} kg · ${t("kb.metric.defer")} ${formatKg(item.deferKg)} kg${item.targetFlightId ? ` → ${item.targetFlightId}` : ""} · ${t("kb.metric.residual")} ${formatKg(item.residualKg)} kg`}
-          </div>
-        </button>
-      ))}
+      <div className={styles.list}>
+        {items.map((item) => (
+          <button
+            key={item.flightId}
+            type="button"
+            className={`${styles.row} ${selectedFlightId === item.flightId ? styles.sel : ""}`}
+            onClick={() => onSelectFlight(item.flightId)}
+          >
+            <div className={styles.head}>
+              <b>{item.flightId}</b>
+              <StatusBadge status={item.status} loadRatio={item.weightLoadRatio} />
+              <span className={styles.tag}>{formatCountdown(item.hoursToDeparture)}</span>
+              <span className={styles.grow} />
+              <AssessmentBadge assessment={item.assessment} />
+            </div>
+            <div className={styles.note}>
+              {item.assessment === "MONITOR"
+                ? `${formatIntPct(item.weightLoadRatio)} · ${t("kb.assess.monitor")}`
+                : `${t("kb.metric.deficit")} ${formatKg(item.deficitKg)} kg · ${t("kb.metric.defer")} ${formatKg(item.deferKg)} kg${item.targetFlightId ? ` → ${item.targetFlightId}` : ""} · ${t("kb.metric.residual")} ${formatKg(item.residualKg)} kg`}
+            </div>
+          </button>
+        ))}
+      </div>
     </section>
   );
 }

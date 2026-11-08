@@ -6,6 +6,7 @@ export type AircraftModel = "A350-900" | "A350-1000" | "777-300ER";
 export type LoadMetric = "weight" | "volume";
 export type CandidateDecision = "ACCEPT" | "NO_GO";
 export type CandidateRejectReason = "OVER" | "CARGO_UNK" | "CAUTION_VOL" | "INSUFFICIENT";
+export type BoardHealth = "CRITICAL" | "STRESSED" | "WATCH" | "CLEAR";
 
 export interface AircraftCapacitySpec {
   capKg: number;
@@ -28,6 +29,7 @@ export interface PlumeBag {
 
 export interface RawFlight {
   id: string;
+  sector: string;
   dep: string;
   aircraft: AircraftModel;
   seats: number;
@@ -70,6 +72,7 @@ export interface PlumeSummary {
 
 export interface HoldLoadView {
   flightId: string;
+  sector: string;
   dep: string;
   aircraft: AircraftModel;
   seats: number;
@@ -163,11 +166,16 @@ export interface KpiSummary {
   plumeShareRatio: number;
   plumeOnFlightKg: number;
   totalCapacityKg: number;
+  knownOccupiedKg: number;
+  knownCapacityKg: number;
+  fleetLoadRatio: number;
+  health: BoardHealth;
 }
 
 export interface SnapshotViewModel {
   asOf: string;
   sector: string;
+  availableSectors: string[];
   windowDays: number;
   nearHours: number;
   flights: HoldLoadView[];

@@ -10,14 +10,16 @@ export function OverviewPage({
   metric,
   selectedFlightId,
   onSelectFlight,
+  live,
 }: {
   viewModel: SnapshotViewModel;
   metric: LoadMetric;
   selectedFlightId: string | null;
   onSelectFlight: (flightId: string) => void;
+  live: boolean;
 }) {
   return (
-    <div className={styles.page}>
+    <div className={`${styles.page} ${live ? styles.live : ""}`}>
       <KpiSummaryRow kpi={viewModel.kpi} />
       <div className={styles.main}>
         <HoldLoadBarChart

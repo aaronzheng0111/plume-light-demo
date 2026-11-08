@@ -2,12 +2,12 @@
   background: var(--card);
   border: 1px solid var(--line);
   border-radius: 12px;
-  padding: 12px 14px;
+  padding: 20px 22px;
   min-width: 0;
 }
 
 .card h3 { margin: 0 0 8px; font-size: 15px; }
-.kpis { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; }
+.kpis { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
 .unit { font-size: 12px; }
 .assess { margin-top: 20px; border-top: 1px solid var(--line); padding-top: 12px; }
 .head { display: flex; align-items: center; flex-wrap: wrap; gap: 10px; }

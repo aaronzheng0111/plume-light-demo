@@ -17,11 +17,11 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 14px 22px;
+  gap: 16px 28px;
   background: var(--card);
   border: 1px solid var(--line);
   border-radius: 12px;
-  padding: 12px 16px;
+  padding: 16px 20px;
 }
 
 .over { border-color: var(--bad); border-width: 2px; }

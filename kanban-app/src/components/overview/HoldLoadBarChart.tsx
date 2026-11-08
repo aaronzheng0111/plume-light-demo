@@ -73,6 +73,68 @@ function BarWithTip({
   );
 }
 
+const COLS_PER_ROW = 5;
+const TICKS = [0, 0.2, 0.4, 0.6, 0.8, 1, 1.2];
+
+function chunk<T>(items: T[], size: number): T[][] {
+  const rows: T[][] = [];
+  for (let index = 0; index < items.length; index += size) {
+    rows.push(items.slice(index, index + size));
+  }
+  return rows;
+}
+
+function PlotRow({
+  flights,
+  plans,
+  metric,
+  selectedFlightId,
+  onSelectFlight,
+  cap90,
+  cap100,
+}: {
+  flights: HoldLoadView[];
+  plans: Record<string, DeferralPlan>;
+  metric: LoadMetric;
+  selectedFlightId: string | null;
+  onSelectFlight: (flightId: string) => void;
+  cap90: string;
+  cap100: string;
+}) {
+  return (
+    <div className={styles.plot}>
+      <div className={styles.axis}>
+        {TICKS.map((tick) => (
+          <span key={tick} style={{ bottom: `${(tick / 1.2) * 250 + 46}px` }}>
+            {Math.round(tick * 100)}%
+          </span>
+        ))}
+      </div>
+      <div className={styles.grid}>
+        {TICKS.map((tick) => (
+          <i key={tick} style={{ bottom: `${(tick / 1.2) * 250 + 46}px` }} />
+        ))}
+        <b className={styles.line90} />
+        <b className={styles.line100} />
+        <em className={styles.cap90}>{cap90}</em>
+        <em className={styles.cap100}>{cap100}</em>
+        <div className={styles.cols}>
+          {flights.map((load) => (
+            <BarWithTip
+              key={load.flightId}
+              load={load}
+              plan={plans[load.flightId]}
+              metric={metric}
+              selected={selectedFlightId === load.flightId}
+              onSelect={onSelectFlight}
+            />
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
 export function HoldLoadBarChart({
   flights,
   plans,
@@ -87,42 +149,26 @@ export function HoldLoadBarChart({
   onSelectFlight: (flightId: string) => void;
 }) {
   const { t } = useI18n();
-  const ticks = [0, 0.2, 0.4, 0.6, 0.8, 1, 1.2];
+  const rows = chunk(flights, COLS_PER_ROW);
   return (
     <section className={styles.card}>
       <div className={styles.head}>
         <h3>{t("kb.chart.title")}</h3>
-        <span className={styles.note}>{t("kb.chart.hint")}</span>
+        <span className={styles.note}>{t("kb.chart.sort")}</span>
       </div>
-      <div className={styles.plot}>
-        <div className={styles.axis}>
-          {ticks.map((tick) => (
-            <span key={tick} style={{ bottom: `${(tick / 1.2) * 250 + 46}px` }}>
-              {Math.round(tick * 100)}%
-            </span>
-          ))}
-        </div>
-        <div className={styles.grid}>
-          {ticks.map((tick) => (
-            <i key={tick} style={{ bottom: `${(tick / 1.2) * 250 + 46}px` }} />
-          ))}
-          <b className={styles.line90} />
-          <b className={styles.line100} />
-          <em className={styles.cap90}>{t("kb.line.90")}</em>
-          <em className={styles.cap100}>{t("kb.line.100")}</em>
-          <div className={styles.cols}>
-            {flights.map((load) => (
-              <BarWithTip
-                key={load.flightId}
-                load={load}
-                plan={plans[load.flightId]}
-                metric={metric}
-                selected={selectedFlightId === load.flightId}
-                onSelect={onSelectFlight}
-              />
-            ))}
-          </div>
-        </div>
+      <div className={styles.plots}>
+        {rows.map((row, index) => (
+          <PlotRow
+            key={row.map((load) => load.flightId).join("-")}
+            flights={row}
+            plans={plans}
+            metric={metric}
+            selectedFlightId={selectedFlightId}
+            onSelectFlight={onSelectFlight}
+            cap90={index === 0 ? t("kb.line.90") : ""}
+            cap100={index === 0 ? t("kb.line.100") : ""}
+          />
+        ))}
       </div>
       <div className={styles.legend}>
         <span><i className={styles.cargo} />{t("kb.legend.cargo")}

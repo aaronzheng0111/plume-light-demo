@@ -163,6 +163,7 @@ export function calculateHoldLoad(
 
   return {
     flightId: flight.id,
+    sector: flight.sector,
     dep: flight.dep,
     aircraft: flight.aircraft,
     seats: flight.seats,

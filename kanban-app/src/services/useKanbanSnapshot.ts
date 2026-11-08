@@ -15,6 +15,7 @@ export interface KanbanQueryState {
   windowDays: number;
   nearHours: number;
   metric: LoadMetric;
+  sector: string;
   events: readonly FeedbackEvent[];
 }
 
@@ -44,8 +45,8 @@ export function useKanbanSnapshot(
       windowDays: query.windowDays,
       nearHours: query.nearHours,
     };
-    return evaluateSnapshot(snapshot, query.asOf);
-  }, [result.data, query.asOf, query.windowDays, query.nearHours, query.events]);
+    return evaluateSnapshot(snapshot, query.asOf, query.sector);
+  }, [result.data, query.asOf, query.windowDays, query.nearHours, query.sector, query.events]);
 
   return {
     viewModel,

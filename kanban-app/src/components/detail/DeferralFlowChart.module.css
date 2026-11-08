@@ -2,11 +2,11 @@
   background: var(--card);
   border: 1px solid var(--line);
   border-radius: 12px;
-  padding: 12px 14px 10px;
+  padding: 20px 22px 18px;
   min-width: 0;
 }
 
-.card h3 { margin: 0 0 8px; font-size: 15px; }
+.card h3 { margin: 0 0 16px; font-size: 15px; }
 
 .scroller {
   overflow-x: auto;
@@ -16,7 +16,16 @@
 .svg {
   display: block;
   width: 100%;
-  min-width: 860px;
+  min-width: 960px;
   height: auto;
   overflow: visible;
+}
+
+.residual {
+  margin: 16px 0 0;
+  max-width: 52rem;
+  color: var(--bad);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.45;
 }

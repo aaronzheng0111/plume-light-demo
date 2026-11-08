@@ -2,11 +2,11 @@
   background: var(--card);
   border: 1px solid var(--line);
   border-radius: 12px;
-  padding: 12px 14px;
+  padding: 20px 22px;
   overflow-x: auto;
 }
 
-.card h3 { margin: 0 0 8px; font-size: 15px; }
+.card h3 { margin: 0 0 12px; font-size: 15px; }
 
 .card table {
   border-collapse: collapse;
@@ -20,13 +20,13 @@
   font-weight: 600;
   font-size: 12px;
   border-bottom: 2px solid var(--line);
-  padding: 5px 6px;
+  padding: 10px 12px;
   white-space: nowrap;
 }
 
 .card td {
   border-bottom: 1px solid var(--line);
-  padding: 6px;
+  padding: 12px;
   white-space: nowrap;
 }
 

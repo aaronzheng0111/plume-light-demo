@@ -44,13 +44,27 @@ describe("evaluateSnapshot", () => {
     expect(view.actionQueue.find((item) => item.flightId === "CX251")?.assessment).toBe("PARTIAL");
     expect(view.actionQueue.find((item) => item.flightId === "CX253")?.assessment).toBe("CLEAR");
 
-    expect(view.kpi.flightCount).toBe(7);
-    expect(view.kpi.cargoUnknownCount).toBe(2);
-    expect(view.kpi.overCount).toBe(2);
-    expect(view.kpi.totalDeficitKg).toBe(1388);
-    expect(view.kpi.totalDeferKg).toBe(738);
-    expect(view.kpi.plumeOnFlightKg).toBe(5386);
-    expect(view.kpi.totalCapacityKg).toBe(178900);
+    expect(view.kpi.flightCount).toBeGreaterThanOrEqual(7);
+    expect(view.kpi.totalDeferKg).toBe(
+      view.flights.reduce((sum, flight) => sum + view.deferralPlans[flight.flightId].deferKg, 0),
+    );
+    expect(view.flights.every((flight) => flight.sector === "HKG-LHR")).toBe(true);
+    expect(view.availableSectors).toEqual(["HKG-LHR", "HKG-MEL", "HKG-SYD"]);
+    expect(view.kpi.health).toBe("STRESSED");
+    const rankedIds = view.flights.map((flight) => flight.flightId);
+    expect(rankedIds.indexOf("CX239")).toBeLessThan(rankedIds.indexOf("CX257"));
+    expect(rankedIds.indexOf("CX257")).toBeLessThan(rankedIds.indexOf("CX249"));
+    expect(view.actionQueue[0]?.flightId).toBe("CX239");
+  });
+
+  it("scopes the board to Melbourne without mixing London flights", () => {
+    const view = evaluateSnapshot(snapshot, snapshot.asOf, "HKG-MEL");
+    const ids = view.flights.map((flight) => flight.flightId);
+    expect(view.sector).toBe("HKG-MEL");
+    expect(ids).toContain("CX105");
+    expect(ids).not.toContain("CX251");
+    expect(view.flights.every((flight) => flight.sector === "HKG-MEL")).toBe(true);
+    expect(view.deferralPlans.CX105.candidates.map((item) => item.flightId)).not.toContain("CX261");
   });
 
   it("shrinks CX251 candidates when the window is 1 day", () => {

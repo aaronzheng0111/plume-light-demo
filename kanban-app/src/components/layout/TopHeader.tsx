@@ -3,7 +3,7 @@ import type { Locale } from "../../i18n/dictionary";
 import { SyncIndicator } from "../common/SyncIndicator";
 import styles from "./TopHeader.module.css";
 
-export function TopHeader() {
+export function TopHeader({ live }: { live: boolean }) {
   const { t, locale, setLocale } = useI18n();
   return (
     <header className={styles.top}>
@@ -13,7 +13,7 @@ export function TopHeader() {
         alt="Plume Light"
       />
       <span className={styles.staff}>{t("kb.staffOnly")}</span>
-      <SyncIndicator />
+      <SyncIndicator live={live} />
       <span className={styles.spacer} />
       <img className={styles.brush} src="/brand/cathay-brushwing-white.png" alt="" />
       {(["zh-Hant", "en"] as Locale[]).map((item) => (

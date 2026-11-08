@@ -40,16 +40,16 @@ export function FlightBarColumn({
     ? `BAG ${formatIntPct(governing)}`
     : `${formatIntPct(governing)}${load.hasVolumeBottleneck ? " ▲" : ""}`;
   const stackTop = cargoRatio + paxRatio + keepRatio + deferRatio;
-  const bw = 58;
-  const x = 6;
+  const bw = 52;
+  const x = 24;
 
   return (
     <button
       type="button"
-      className={`${styles.col} ${selected ? styles.selected : ""}`}
+      className={`${styles.col} ${selected ? styles.selected : ""} ${load.status === "OVER" ? styles.hot : ""}`}
       onClick={() => onSelect(load.flightId)}
     >
-      <svg viewBox={`0 0 70 ${PLOT_T + PLOT_H + 4}`} className={styles.bar} aria-hidden="true">
+      <svg viewBox={`0 0 100 ${PLOT_T + PLOT_H + 4}`} className={styles.bar} aria-hidden="true">
         <defs>
           <pattern id={`defer-${load.flightId}`} width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
             <rect width="6" height="6" fill="#fff" />
@@ -94,7 +94,7 @@ export function FlightBarColumn({
               stroke="#9aa5a3"
               strokeDasharray="4 3"
             />
-            <text x="35" y={(y(1) + y(stackTop)) / 2 + 4} textAnchor="middle" fontSize="9" fill="#5d6f6d" fontWeight="600">
+            <text x="50" y={(y(1) + y(stackTop)) / 2 + 4} textAnchor="middle" fontSize="9" fill="#5d6f6d" fontWeight="600">
               CARGO UNK
             </text>
           </>
@@ -110,9 +110,9 @@ export function FlightBarColumn({
             strokeWidth="2.2"
           />
         ) : null}
-        <rect x="7" y={y(Math.max(stackTop, isUnk ? 1 : stackTop)) - 20} width="56" height="16" rx="3" fill="#fff" />
+        <rect x="22" y={y(Math.max(stackTop, isUnk ? 1 : stackTop)) - 20} width="56" height="16" rx="3" fill="#fff" />
         <text
-          x="35"
+          x="50"
           y={y(Math.max(stackTop, isUnk ? 1 : stackTop)) - 8}
           textAnchor="middle"
           fontSize="12"

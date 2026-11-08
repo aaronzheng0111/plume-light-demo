@@ -1,3 +1,4 @@
+import { formatSectorCode } from "../../config/sectors";
 import { formatCountdown, formatDep, formatKg } from "../../format/display";
 import { useI18n } from "../../i18n/useI18n";
 import type { HoldLoadView } from "../../types/kanban";
@@ -34,7 +35,7 @@ export function FlightHeaderBanner({
         </div>
         <div>
           <div className={styles.k}>{t("kb.detail.sector")}</div>
-          <b>{sector.replace("-", " → ")}</b>
+          <b>{formatSectorCode(sector)}</b>
         </div>
         <div>
           <div className={styles.k}>{t("kb.detail.dep")}</div>

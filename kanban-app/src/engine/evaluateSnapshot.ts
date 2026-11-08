@@ -1,3 +1,4 @@
+import { DEFAULT_SECTOR, listBoardSectors } from "../config/sectors";
 import type {
   ActionQueueItem,
   HoldLoadView,
@@ -5,6 +6,7 @@ import type {
   RawKanbanSnapshot,
   SnapshotViewModel,
 } from "../types/kanban";
+import { compareCrisis, resolveBoardHealth } from "./crisisRank";
 import { buildLoadMap, planDeferral } from "./deferralPlan";
 
 function buildKpi(flights: readonly HoldLoadView[], totalDeferKg: number): KpiSummary {
@@ -15,6 +17,9 @@ function buildKpi(flights: readonly HoldLoadView[], totalDeferKg: number): KpiSu
   const totalDeficitKg = flights.reduce((sum, flight) => sum + flight.deficitKg, 0);
   const plumeOnFlightKg = flights.reduce((sum, flight) => sum + flight.plumeOnFlightKg, 0);
   const totalCapacityKg = flights.reduce((sum, flight) => sum + flight.capacityKg, 0);
+  const known = flights.filter((flight) => flight.totalKg != null);
+  const knownOccupiedKg = known.reduce((sum, flight) => sum + (flight.totalKg as number), 0);
+  const knownCapacityKg = known.reduce((sum, flight) => sum + flight.capacityKg, 0);
   return {
     flightCount: flights.length,
     cargoUnknownCount,
@@ -27,6 +32,10 @@ function buildKpi(flights: readonly HoldLoadView[], totalDeferKg: number): KpiSu
     plumeShareRatio: totalCapacityKg === 0 ? 0 : plumeOnFlightKg / totalCapacityKg,
     plumeOnFlightKg,
     totalCapacityKg,
+    knownOccupiedKg,
+    knownCapacityKg,
+    fleetLoadRatio: knownCapacityKg === 0 ? 0 : knownOccupiedKg / knownCapacityKg,
+    health: resolveBoardHealth(flights),
   };
 }
 
@@ -40,6 +49,7 @@ function isActionable(flight: HoldLoadView): boolean {
 export function evaluateSnapshot(
   snapshot: RawKanbanSnapshot,
   asOf: string = snapshot.asOf,
+  sector: string = snapshot.sector || DEFAULT_SECTOR,
 ): SnapshotViewModel {
   const loadsById = buildLoadMap(snapshot, asOf);
   const flights = snapshot.flights.map((flight) => loadsById.get(flight.id) as HoldLoadView);
@@ -49,7 +59,9 @@ export function evaluateSnapshot(
     deferralPlans[flight.id] = planDeferral(flight, snapshot, loadsById);
   }
 
-  const actionQueue: ActionQueueItem[] = flights
+  const visible = flights.filter((flight) => flight.sector === sector);
+  const rankedFlights = [...(visible.length > 0 ? visible : flights)].sort(compareCrisis);
+  const actionQueue: ActionQueueItem[] = rankedFlights
     .filter(isActionable)
     .map((flight) => {
       const plan = deferralPlans[flight.flightId];
@@ -66,22 +78,22 @@ export function evaluateSnapshot(
         targetFlightId,
         assessment: plan.assessment,
       };
-    })
-    .sort((left, right) => left.hoursToDeparture - right.hoursToDeparture);
+    });
 
-  const totalDeferKg = Object.values(deferralPlans).reduce(
-    (sum, plan) => sum + plan.deferKg,
+  const totalDeferKg = rankedFlights.reduce(
+    (sum, flight) => sum + deferralPlans[flight.flightId].deferKg,
     0,
   );
 
   return {
     asOf,
-    sector: snapshot.sector,
+    sector,
+    availableSectors: listBoardSectors(snapshot.flights.map((flight) => flight.sector)),
     windowDays: snapshot.windowDays,
     nearHours: snapshot.nearHours,
-    flights,
+    flights: rankedFlights,
     deferralPlans,
     actionQueue,
-    kpi: buildKpi(flights, totalDeferKg),
+    kpi: buildKpi(rankedFlights, totalDeferKg),
   };
 }

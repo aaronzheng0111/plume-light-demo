@@ -27,7 +27,7 @@ export function FlightDetailPage({
   }
   return (
     <div className={styles.page}>
-      <FlightHeaderBanner load={load} sector={viewModel.sector} onBack={onBack} asOf={viewModel.asOf} />
+      <FlightHeaderBanner load={load} sector={load.sector} onBack={onBack} asOf={viewModel.asOf} />
       <div className={styles.grid}>
         <HoldOccupancyCard load={load} plan={plan} />
         <PlumeAssessmentCard load={load} plan={plan} windowDays={viewModel.windowDays} />
@@ -36,7 +36,7 @@ export function FlightDetailPage({
         load={load}
         plan={plan}
         windowDays={viewModel.windowDays}
-        sector={viewModel.sector}
+        sector={load.sector}
       />
     </div>
   );

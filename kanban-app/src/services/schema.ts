@@ -105,6 +105,7 @@ function parseFlight(value: unknown): RawFlight {
   }
   return {
     id,
+    sector: readString(value.sector, `${id} sector`),
     dep: readString(value.dep, `${id} dep`),
     aircraft: aircraft as AircraftModel,
     seats,

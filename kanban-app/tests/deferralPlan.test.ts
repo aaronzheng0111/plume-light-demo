@@ -29,6 +29,14 @@ describe("deferral planning against Plan §7", () => {
   it("lists later same-sector flights inside the window", () => {
     const candidates = listCandidateFlights(flight("CX251"), snapshot).map((item) => item.id);
     expect(candidates).toEqual(["CX253", "CX255", "CX259", "CX261"]);
+    expect(candidates).not.toContain("CX105");
+    expect(candidates).not.toContain("CX111");
+  });
+
+  it("keeps Melbourne deferral on HKG-MEL", () => {
+    const candidates = listCandidateFlights(flight("CX105"), snapshot).map((item) => item.id);
+    expect(candidates).toEqual(["CX139", "CX163", "CX165"]);
+    expect(candidates.every((id) => flight(id).sector === "HKG-MEL")).toBe(true);
   });
 
   it("CX251 defers 386 kg to CX261 and stays PARTIAL", () => {

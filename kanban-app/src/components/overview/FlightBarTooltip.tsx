@@ -1,3 +1,4 @@
+import { formatSectorCode, sectorLabelKey } from "../../config/sectors";
 import { formatKg, formatPct } from "../../format/display";
 import { useI18n } from "../../i18n/useI18n";
 import type { DeferralPlan, HoldLoadView } from "../../types/kanban";
@@ -21,7 +22,8 @@ export function FlightBarTooltip({
         <StatusBadge status={load.status} loadRatio={load.weightLoadRatio} />
       </div>
       <div className={styles.meta}>
-        {load.seats} {t("kb.tip.seats")} · CAP {formatKg(load.capacityKg)} kg
+        {formatSectorCode(load.sector)} · {t(sectorLabelKey(load.sector))} · {load.seats}{" "}
+        {t("kb.tip.seats")} · CAP {formatKg(load.capacityKg)} kg
       </div>
       <hr />
       <div className={styles.row}>
