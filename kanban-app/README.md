@@ -1,32 +1,28 @@
-# React + TypeScript + Vite
+# Plume Light · 貨艙壓力看板
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+React + Vite 子工程。開發時獨立運行；生產靜態包掛到主站原營運入口。
 
-Currently, two official plugins are available:
+## 開發
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+```bash
+# 從倉庫根目錄
+./start-kanban.sh
+# 或
+npm run dev
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+預設 <http://127.0.0.1:5173/>。
+
+## 掛到主站（`pages/operations.html`）
+
+```bash
+npm run build
+```
+
+產物寫入 `pages/hold-pressure/`。主站導航的 [營運看板](../pages/operations.html) 會跳轉到該目錄。舊靜態營運頁備份在 `archive/operations-legacy.html`。
+
+## 測試
+
+```bash
+npm test
+```

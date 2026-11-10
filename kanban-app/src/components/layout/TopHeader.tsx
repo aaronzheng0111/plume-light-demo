@@ -1,3 +1,4 @@
+import { publicUrl } from "../../config/publicUrl";
 import { useI18n } from "../../i18n/useI18n";
 import type { Locale } from "../../i18n/dictionary";
 import { SyncIndicator } from "../common/SyncIndicator";
@@ -9,13 +10,13 @@ export function TopHeader({ live }: { live: boolean }) {
     <header className={styles.top}>
       <img
         className={styles.logo}
-        src="/brand/plume_light_logo_horizontal_reversed.svg"
+        src={publicUrl("brand/plume_light_logo_horizontal_reversed.svg")}
         alt="Plume Light"
       />
       <span className={styles.staff}>{t("kb.staffOnly")}</span>
       <SyncIndicator live={live} />
       <span className={styles.spacer} />
-      <img className={styles.brush} src="/brand/cathay-brushwing-white.png" alt="" />
+      <img className={styles.brush} src={publicUrl("brand/cathay-brushwing-white.png")} alt="" />
       {(["zh-Hant", "en"] as Locale[]).map((item) => (
         <button
           key={item}

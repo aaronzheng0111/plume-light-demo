@@ -139,7 +139,7 @@ export class JsonDataSource implements KanbanDataSourceContract {
   private readonly listeners = new Set<(event: FeedbackEvent) => void>();
 
   async fetchSnapshot(_params: SnapshotQueryParams): Promise<RawKanbanSnapshot> {
-    const response = await fetch("/data/kanban-snapshot.json");
+    const response = await fetch(`${import.meta.env.BASE_URL}data/kanban-snapshot.json`);
     if (!response.ok) {
       throw new Error(`Failed to load kanban snapshot (${response.status})`);
     }
