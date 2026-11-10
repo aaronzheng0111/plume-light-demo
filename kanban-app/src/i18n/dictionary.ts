@@ -2,6 +2,8 @@ export const dictionary = {
   "zh-Hant": {
     "kb.staffOnly": "僅限國泰員工 · 營運演示 · 規劃參考",
     "kb.navTitle": "營運看板",
+    "kb.home": "返回主頁",
+    "kb.homeHint": "回到 Plume Light 旅客首頁",
     "kb.noAutoSale": "不會自動出售或釋放貨運艙位。",
     "kb.missingNotZero": "缺失不等於零",
     "kb.demoSaved": "預報已保存，演示看板可讀取",
@@ -152,6 +154,8 @@ export const dictionary = {
   en: {
     "kb.staffOnly": "Cathay staff only · Operations demo · Planning reference",
     "kb.navTitle": "Operations",
+    "kb.home": "Back to home",
+    "kb.homeHint": "Return to the Plume Light passenger home",
     "kb.noAutoSale": "No cargo space is automatically sold or released.",
     "kb.missingNotZero": "Missing is not zero",
     "kb.demoSaved": "Declaration saved; demo board can read it",
