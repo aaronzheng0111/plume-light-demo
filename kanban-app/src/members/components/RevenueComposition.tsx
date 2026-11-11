@@ -24,7 +24,7 @@ export function RevenueComposition({
   ];
 
   return (
-    <MemberCard index={1} questionKey="mb.q1" showScopeAll={audience !== "all"}>
+    <MemberCard questionKey="mb.q1" showScopeAll={audience !== "all"}>
       <div className={styles.metrics}>
         <p>
           <small>{t("mb.rev.revenue")}</small>

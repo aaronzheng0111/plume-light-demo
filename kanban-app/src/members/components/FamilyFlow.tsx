@@ -27,7 +27,7 @@ export function FamilyFlow({ family, audience }: { family: FamilyView; audience:
   const linked = family.statuses.find((status) => status.status === "linked_unauthorized");
 
   return (
-    <MemberCard index={4} questionKey="mb.q4" showScopeAll={audience !== "all"}>
+    <MemberCard questionKey="mb.q4" showScopeAll={audience !== "all"}>
       <div className={styles.metrics}>
         <p>
           <small>{t("mb.fam.sent")}</small>

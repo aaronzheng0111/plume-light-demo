@@ -9,7 +9,7 @@ export function TierColumns({ tiers }: { tiers: TierView }) {
   const tallest = Math.max(...tiers.tiers.map((column) => column.count), 1);
 
   return (
-    <MemberCard index={7} questionKey="mb.q7" showScopeAll={false}>
+    <MemberCard questionKey="mb.q7" showScopeAll={false}>
       <div className={styles.tiers} style={{ gridTemplateColumns: `repeat(${tiers.tiers.length}, 1fr)` }}>
         {tiers.tiers.map((column) => {
           const usage = column.usage.rate;

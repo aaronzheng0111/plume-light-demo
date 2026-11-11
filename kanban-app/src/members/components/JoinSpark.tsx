@@ -26,7 +26,7 @@ export function JoinSpark({ join }: { join: JoinView }) {
   const funnelMax = Math.max(join.reach, 1);
 
   return (
-    <MemberCard index={2} questionKey="mb.q2" showScopeAll={false}>
+    <MemberCard questionKey="mb.q2" showScopeAll={false}>
       <div className={styles.metrics}>
         <p>
           <small>{t("mb.join.cumulative")}</small>

@@ -18,7 +18,7 @@ export function ServiceFunnel({ service }: { service: ServiceView }) {
   const empty = service.layers.every((layer) => layer.members === 0);
 
   return (
-    <MemberCard index={3} questionKey="mb.q3" showScopeAll={false}>
+    <MemberCard questionKey="mb.q3" showScopeAll={false}>
       <div className={styles.metrics}>
         <p>
           <small>{t("mb.svc.paidOfJoined")}</small>

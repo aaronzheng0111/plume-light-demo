@@ -11,7 +11,7 @@ export function LagRuler({ lag }: { lag: LagView }) {
   const tallest = Math.max(...lag.bins.map((bin) => bin.count), 1);
 
   return (
-    <MemberCard index={6} questionKey="mb.q6" showScopeAll={false}>
+    <MemberCard questionKey="mb.q6" showScopeAll={false}>
       <p className={styles.caption}>{t("mb.lag.caption")}</p>
       {noSample ? (
         <p className={styles.empty}>{t("mb.noSample")}</p>

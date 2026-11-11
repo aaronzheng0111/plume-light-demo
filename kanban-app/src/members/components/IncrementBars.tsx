@@ -26,7 +26,7 @@ export function IncrementBars({
   );
 
   return (
-    <MemberCard index={5} questionKey="mb.q5" showScopeAll={false}>
+    <MemberCard questionKey="mb.q5" showScopeAll={false}>
       <div className={styles.metrics}>
         <p>
           <small>{t("mb.inc.completed")}</small>

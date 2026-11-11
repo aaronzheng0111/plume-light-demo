@@ -11,7 +11,7 @@ export function PromoSplit({ promo, audience }: { promo: PromoView; audience: Au
   const widest = Math.max(promo.familyOrders, promo.officialOrders, 1);
 
   return (
-    <MemberCard index={8} questionKey="mb.q8" showScopeAll={audience !== "all"}>
+    <MemberCard questionKey="mb.q8" showScopeAll={audience !== "all"}>
       <p className={styles.usage}>
         <small>{t("mb.promo.usage")}</small>
         <b>{formatRatio(promo.usage, t("mb.noSample"))}</b>

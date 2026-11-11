@@ -4,12 +4,10 @@ import type { TranslationKey } from "../../i18n/dictionary";
 import styles from "./MemberCard.module.css";
 
 export function MemberCard({
-  index,
   questionKey,
   showScopeAll,
   children,
 }: {
-  index: number;
   questionKey: TranslationKey;
   showScopeAll: boolean;
   children: ReactNode;
@@ -18,7 +16,6 @@ export function MemberCard({
   return (
     <section className={styles.card}>
       <h2>
-        <span className={styles.idx}>{index}</span>
         <span className={styles.question}>{t(questionKey)}</span>
         {showScopeAll ? <span className={styles.badge}>{t("mb.scopeAll")}</span> : null}
       </h2>
