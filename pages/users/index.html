@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#043f39">
+  <title>Plume Light · 用戶</title>
+  <link rel="icon" type="image/svg+xml" href="../../assets/plume_light_icon.svg">
+  <link rel="stylesheet" href="../../assets/boards.css">
+  <script>
+    (function () {
+      var en = false;
+      try { en = localStorage.getItem("plume-light-language") === "en"; } catch (error) {}
+      document.documentElement.lang = en ? "en" : "zh-Hant";
+      document.title = en ? "Plume Light · Users" : "Plume Light · 用戶";
+    })();
+  </script>
+</head>
+<body data-title-zh="Plume Light · 用戶" data-title-en="Plume Light · Users">
+  <header class="top">
+    <a class="brand" href="../../index.html" aria-label="Plume Light">
+      <img src="../../assets/plume_light_logo_horizontal_reversed.svg" alt="Plume Light" width="770" height="200">
+    </a>
+    <a class="navbtn" href="../operations.html"><span class="zh">返回</span><span class="en">Back</span></a>
+    <a class="navbtn home" href="../../index.html"><span class="zh">回到主界面</span><span class="en">Home</span></a>
+    <span class="staff"><span class="zh">僅限國泰員工</span><span class="en">Cathay staff only</span></span>
+    <span class="spacer"></span>
+    <img class="brush" src="../../assets/cathay-brushwing-white.png" alt="">
+    <button class="lang" type="button" data-set-lang="zh-Hant">繁中</button>
+    <button class="lang" type="button" data-set-lang="en">EN</button>
+  </header>
+  <main class="stage">
+    <section class="placeholder">
+      <img src="../../assets/boards/member-bears.png" alt="" width="1024" height="1024">
+      <div>
+        <p class="eyebrow">02</p>
+        <h1><span class="zh">用戶</span><span class="en">Users</span></h1>
+        <p><span class="zh">版面還沒開始。之後的用戶指標會直接做在這一頁。</span><span class="en">Not designed yet. User metrics will be built on this page.</span></p>
+      </div>
+    </section>
+  </main>
+  <script src="../../assets/boards-lang.js"></script>
+  <script>location.replace("../hold-pressure/index.html?board=members");</script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+.card {
+  background: #fff;
+  border: 1px solid rgba(4, 63, 57, 0.06);
+  border-radius: 18px;
+  box-shadow: 0 10px 28px rgba(4, 63, 57, 0.04);
+  padding: 16px 0 0;
+  overflow: hidden;
+}
+
+.head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 0 22px 8px;
+}
+
+.head h2 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 650;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.badge {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--green);
+  background: var(--pale);
+  border-radius: 999px;
+  padding: 2px 8px;
+}
+
+.total b {
+  font-size: 28px;
+  letter-spacing: -0.03em;
+}
+
+.total small {
+  margin-left: 6px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.map { width: 100%; height: auto; display: block; }
+
+.arc { transition: stroke-width 400ms ease, opacity 400ms ease; }
+
+.city {
+  font-size: 13px;
+  font-weight: 700;
+  fill: #173f39;
+}
+
+.routes { display: grid; grid-template-columns: repeat(3, 1fr); }
+
+.route {
+  text-align: left;
+  background: transparent;
+  border: 0;
+  border-top: 1px solid var(--line);
+  padding: 14px 22px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.route + .route { border-left: 1px solid var(--line); }
+
+.route em {
+  font-style: normal;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.route strong {
+  font-size: 40px;
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+.route span { color: var(--muted); font-size: 12px; }
+
+.split { color: var(--ink); font-size: 13px; }
+
+.note { color: var(--muted); margin-top: 4px; }
+
+.on { background: var(--pale); }

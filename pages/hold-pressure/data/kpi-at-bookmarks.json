@@ -1,0 +1,2140 @@
+{
+  "A": {
+    "t_demo": "2026-06-17T09:30:00+08:00",
+    "growth": {
+      "G1_cumulative_members": 23,
+      "G1_new_members_today": 0,
+      "G1_new_members_this_week": 3,
+      "G1_new_this_week_by_persona": {
+        "student_uk": 2,
+        "student_au": 1
+      },
+      "G2_join_conversion_reach_to_complete": 0.6571,
+      "G2_reach": 35,
+      "G2_start_join": 25,
+      "G2_complete_join": 23,
+      "G3_new_today_vs_yesterday": -1,
+      "G4_cargo_window_member_seat_share": [
+        {
+          "flight_id": "CX239",
+          "departure_local": "2026-11-15T08:15:00+08:00",
+          "seats": 280,
+          "paid_members_on_flight": 0,
+          "member_seat_share": 0.0,
+          "cargo_plume_pax": 8,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX257",
+          "departure_local": "2026-11-15T09:30:00+08:00",
+          "seats": 334,
+          "paid_members_on_flight": 0,
+          "member_seat_share": 0.0,
+          "cargo_plume_pax": 20,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX161",
+          "departure_local": "2026-11-15T09:55:00+08:00",
+          "seats": 280,
+          "paid_members_on_flight": 0,
+          "member_seat_share": 0.0,
+          "cargo_plume_pax": 7,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX237",
+          "departure_local": "2026-11-15T14:20:00+08:00",
+          "seats": 312,
+          "paid_members_on_flight": 0,
+          "member_seat_share": 0.0,
+          "cargo_plume_pax": 15,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX105",
+          "departure_local": "2026-11-15T19:05:00+08:00",
+          "seats": 334,
+          "paid_members_on_flight": 0,
+          "member_seat_share": 0.0,
+          "cargo_plume_pax": 11,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX249",
+          "departure_local": "2026-11-15T21:10:00+08:00",
+          "seats": 334,
+          "paid_members_on_flight": 0,
+          "member_seat_share": 0.0,
+          "cargo_plume_pax": 17,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX111",
+          "departure_local": "2026-11-15T21:40:00+08:00",
+          "seats": 368,
+          "paid_members_on_flight": 0,
+          "member_seat_share": 0.0,
+          "cargo_plume_pax": 14,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX251",
+          "departure_local": "2026-11-15T23:40:00+08:00",
+          "seats": 368,
+          "paid_members_on_flight": 0,
+          "member_seat_share": 0.0,
+          "cargo_plume_pax": 28,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX139",
+          "departure_local": "2026-11-16T08:40:00+08:00",
+          "seats": 280,
+          "paid_members_on_flight": 0,
+          "member_seat_share": 0.0,
+          "cargo_plume_pax": 6,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX253",
+          "departure_local": "2026-11-16T09:30:00+08:00",
+          "seats": 280,
+          "paid_members_on_flight": 0,
+          "member_seat_share": 0.0,
+          "cargo_plume_pax": 16,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX163",
+          "departure_local": "2026-11-16T20:20:00+08:00",
+          "seats": 312,
+          "paid_members_on_flight": 0,
+          "member_seat_share": 0.0,
+          "cargo_plume_pax": 8,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX101",
+          "departure_local": "2026-11-16T20:55:00+08:00",
+          "seats": 300,
+          "paid_members_on_flight": 0,
+          "member_seat_share": 0.0,
+          "cargo_plume_pax": 9,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX255",
+          "departure_local": "2026-11-16T23:55:00+08:00",
+          "seats": 300,
+          "paid_members_on_flight": 0,
+          "member_seat_share": 0.0,
+          "cargo_plume_pax": 12,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX165",
+          "departure_local": "2026-11-17T08:40:00+08:00",
+          "seats": 280,
+          "paid_members_on_flight": 0,
+          "member_seat_share": 0.0,
+          "cargo_plume_pax": 5,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX259",
+          "departure_local": "2026-11-17T09:30:00+08:00",
+          "seats": 260,
+          "paid_members_on_flight": 0,
+          "member_seat_share": 0.0,
+          "cargo_plume_pax": 10,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX261",
+          "departure_local": "2026-11-17T23:40:00+08:00",
+          "seats": 294,
+          "paid_members_on_flight": 0,
+          "member_seat_share": 0.0,
+          "cargo_plume_pax": 14,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX263",
+          "departure_local": "2026-11-18T09:30:00+08:00",
+          "seats": 334,
+          "paid_members_on_flight": 0,
+          "member_seat_share": 0.0,
+          "cargo_plume_pax": 6,
+          "matches_cargo_plume_pax": null
+        }
+      ]
+    },
+    "tracking": {
+      "T1_days_join_to_first_paid_p50": null,
+      "T1_days_join_to_first_paid_p90": null,
+      "T1_members_with_first_paid": 0,
+      "T2_service_booking_conversion": 0.0,
+      "T3_invites_sent": 0,
+      "T3_accept_rate": null,
+      "T3_authorization_rate_among_accepted": null,
+      "T3_authorization_rate_among_invited": null,
+      "T4_tier_counts": {
+        "Silver": 8,
+        "Green": 12,
+        "Gold": 2,
+        "Diamond": 1
+      },
+      "T4_tier_usage_rate": {
+        "Silver": 0.0,
+        "Green": 0.0,
+        "Gold": 0.0,
+        "Diamond": 0.0
+      },
+      "T5_alert_count": 0,
+      "T5_alerts": []
+    },
+    "commercial": {
+      "C1_service_revenue_hkd": 0,
+      "C1_contribution_profit_hkd": 0,
+      "C1_cost_assumption_locked": false,
+      "C1_paid_orders": 0,
+      "C2_incremental_ticket_revenue_completed_weeks_hkd": 7200,
+      "C2_incremental_ticket_revenue_partial_current_week_hkd": 4200,
+      "C3_promo_order_rate": null,
+      "C3_proposed_family_promo_orders": 0,
+      "C3_official_student_promo_orders": 0,
+      "C3_proposed_family_promo_revenue_hkd": 0,
+      "C3_roi": null,
+      "C3_roi_note": "ROI left blank until assumed costs are locked."
+    }
+  },
+  "M": {
+    "t_demo": "2026-07-08T09:30:00+08:00",
+    "growth": {
+      "G1_cumulative_members": 67,
+      "G1_new_members_today": 1,
+      "G1_new_members_this_week": 7,
+      "G1_new_this_week_by_persona": {
+        "student_uk": 3,
+        "student_au": 2,
+        "parent_victoria": 2
+      },
+      "G2_join_conversion_reach_to_complete": 0.8171,
+      "G2_reach": 82,
+      "G2_start_join": 70,
+      "G2_complete_join": 67,
+      "G3_new_today_vs_yesterday": -2,
+      "G4_cargo_window_member_seat_share": [
+        {
+          "flight_id": "CX239",
+          "departure_local": "2026-11-15T08:15:00+08:00",
+          "seats": 280,
+          "paid_members_on_flight": 0,
+          "member_seat_share": 0.0,
+          "cargo_plume_pax": 8,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX257",
+          "departure_local": "2026-11-15T09:30:00+08:00",
+          "seats": 334,
+          "paid_members_on_flight": 0,
+          "member_seat_share": 0.0,
+          "cargo_plume_pax": 20,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX161",
+          "departure_local": "2026-11-15T09:55:00+08:00",
+          "seats": 280,
+          "paid_members_on_flight": 0,
+          "member_seat_share": 0.0,
+          "cargo_plume_pax": 7,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX237",
+          "departure_local": "2026-11-15T14:20:00+08:00",
+          "seats": 312,
+          "paid_members_on_flight": 0,
+          "member_seat_share": 0.0,
+          "cargo_plume_pax": 15,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX105",
+          "departure_local": "2026-11-15T19:05:00+08:00",
+          "seats": 334,
+          "paid_members_on_flight": 0,
+          "member_seat_share": 0.0,
+          "cargo_plume_pax": 11,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX249",
+          "departure_local": "2026-11-15T21:10:00+08:00",
+          "seats": 334,
+          "paid_members_on_flight": 0,
+          "member_seat_share": 0.0,
+          "cargo_plume_pax": 17,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX111",
+          "departure_local": "2026-11-15T21:40:00+08:00",
+          "seats": 368,
+          "paid_members_on_flight": 0,
+          "member_seat_share": 0.0,
+          "cargo_plume_pax": 14,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX251",
+          "departure_local": "2026-11-15T23:40:00+08:00",
+          "seats": 368,
+          "paid_members_on_flight": 1,
+          "member_seat_share": 0.0027,
+          "cargo_plume_pax": 28,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX139",
+          "departure_local": "2026-11-16T08:40:00+08:00",
+          "seats": 280,
+          "paid_members_on_flight": 1,
+          "member_seat_share": 0.0036,
+          "cargo_plume_pax": 6,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX253",
+          "departure_local": "2026-11-16T09:30:00+08:00",
+          "seats": 280,
+          "paid_members_on_flight": 0,
+          "member_seat_share": 0.0,
+          "cargo_plume_pax": 16,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX163",
+          "departure_local": "2026-11-16T20:20:00+08:00",
+          "seats": 312,
+          "paid_members_on_flight": 0,
+          "member_seat_share": 0.0,
+          "cargo_plume_pax": 8,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX101",
+          "departure_local": "2026-11-16T20:55:00+08:00",
+          "seats": 300,
+          "paid_members_on_flight": 0,
+          "member_seat_share": 0.0,
+          "cargo_plume_pax": 9,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX255",
+          "departure_local": "2026-11-16T23:55:00+08:00",
+          "seats": 300,
+          "paid_members_on_flight": 0,
+          "member_seat_share": 0.0,
+          "cargo_plume_pax": 12,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX165",
+          "departure_local": "2026-11-17T08:40:00+08:00",
+          "seats": 280,
+          "paid_members_on_flight": 0,
+          "member_seat_share": 0.0,
+          "cargo_plume_pax": 5,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX259",
+          "departure_local": "2026-11-17T09:30:00+08:00",
+          "seats": 260,
+          "paid_members_on_flight": 0,
+          "member_seat_share": 0.0,
+          "cargo_plume_pax": 10,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX261",
+          "departure_local": "2026-11-17T23:40:00+08:00",
+          "seats": 294,
+          "paid_members_on_flight": 0,
+          "member_seat_share": 0.0,
+          "cargo_plume_pax": 14,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX263",
+          "departure_local": "2026-11-18T09:30:00+08:00",
+          "seats": 334,
+          "paid_members_on_flight": 0,
+          "member_seat_share": 0.0,
+          "cargo_plume_pax": 6,
+          "matches_cargo_plume_pax": null
+        }
+      ]
+    },
+    "tracking": {
+      "T1_days_join_to_first_paid_p50": 15.21,
+      "T1_days_join_to_first_paid_p90": 25.91,
+      "T1_members_with_first_paid": 6,
+      "T2_service_booking_conversion": 0.0896,
+      "T3_invites_sent": 4,
+      "T3_accept_rate": 0.5,
+      "T3_authorization_rate_among_accepted": 0.5,
+      "T3_authorization_rate_among_invited": 0.25,
+      "T4_tier_counts": {
+        "Silver": 23,
+        "Green": 37,
+        "Gold": 6,
+        "Diamond": 1
+      },
+      "T4_tier_usage_rate": {
+        "Silver": 0.0435,
+        "Green": 0.1081,
+        "Gold": 0.1667,
+        "Diamond": 0.0
+      },
+      "T5_alert_count": 0,
+      "T5_alerts": []
+    },
+    "commercial": {
+      "C1_service_revenue_hkd": 10750,
+      "C1_contribution_profit_hkd": 6987.5,
+      "C1_cost_assumption_locked": false,
+      "C1_paid_orders": 6,
+      "C2_incremental_ticket_revenue_completed_weeks_hkd": 28900,
+      "C2_incremental_ticket_revenue_partial_current_week_hkd": 9000,
+      "C3_promo_order_rate": 0.3333,
+      "C3_proposed_family_promo_orders": 2,
+      "C3_official_student_promo_orders": 0,
+      "C3_proposed_family_promo_revenue_hkd": 4000,
+      "C3_roi": null,
+      "C3_roi_note": "ROI left blank until assumed costs are locked."
+    }
+  },
+  "B": {
+    "t_demo": "2026-08-12T09:30:00+08:00",
+    "growth": {
+      "G1_cumulative_members": 128,
+      "G1_new_members_today": 0,
+      "G1_new_members_this_week": 4,
+      "G1_new_this_week_by_persona": {
+        "student_uk": 2,
+        "student_au": 1,
+        "parent_hk": 1
+      },
+      "G2_join_conversion_reach_to_complete": 0.8312,
+      "G2_reach": 154,
+      "G2_start_join": 133,
+      "G2_complete_join": 128,
+      "G3_new_today_vs_yesterday": -1,
+      "G4_cargo_window_member_seat_share": [
+        {
+          "flight_id": "CX239",
+          "departure_local": "2026-11-15T08:15:00+08:00",
+          "seats": 280,
+          "paid_members_on_flight": 1,
+          "member_seat_share": 0.0036,
+          "cargo_plume_pax": 8,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX257",
+          "departure_local": "2026-11-15T09:30:00+08:00",
+          "seats": 334,
+          "paid_members_on_flight": 3,
+          "member_seat_share": 0.009,
+          "cargo_plume_pax": 20,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX161",
+          "departure_local": "2026-11-15T09:55:00+08:00",
+          "seats": 280,
+          "paid_members_on_flight": 0,
+          "member_seat_share": 0.0,
+          "cargo_plume_pax": 7,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX237",
+          "departure_local": "2026-11-15T14:20:00+08:00",
+          "seats": 312,
+          "paid_members_on_flight": 0,
+          "member_seat_share": 0.0,
+          "cargo_plume_pax": 15,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX105",
+          "departure_local": "2026-11-15T19:05:00+08:00",
+          "seats": 334,
+          "paid_members_on_flight": 0,
+          "member_seat_share": 0.0,
+          "cargo_plume_pax": 11,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX249",
+          "departure_local": "2026-11-15T21:10:00+08:00",
+          "seats": 334,
+          "paid_members_on_flight": 1,
+          "member_seat_share": 0.003,
+          "cargo_plume_pax": 17,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX111",
+          "departure_local": "2026-11-15T21:40:00+08:00",
+          "seats": 368,
+          "paid_members_on_flight": 3,
+          "member_seat_share": 0.0082,
+          "cargo_plume_pax": 14,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX251",
+          "departure_local": "2026-11-15T23:40:00+08:00",
+          "seats": 368,
+          "paid_members_on_flight": 1,
+          "member_seat_share": 0.0027,
+          "cargo_plume_pax": 28,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX139",
+          "departure_local": "2026-11-16T08:40:00+08:00",
+          "seats": 280,
+          "paid_members_on_flight": 1,
+          "member_seat_share": 0.0036,
+          "cargo_plume_pax": 6,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX253",
+          "departure_local": "2026-11-16T09:30:00+08:00",
+          "seats": 280,
+          "paid_members_on_flight": 1,
+          "member_seat_share": 0.0036,
+          "cargo_plume_pax": 16,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX163",
+          "departure_local": "2026-11-16T20:20:00+08:00",
+          "seats": 312,
+          "paid_members_on_flight": 1,
+          "member_seat_share": 0.0032,
+          "cargo_plume_pax": 8,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX101",
+          "departure_local": "2026-11-16T20:55:00+08:00",
+          "seats": 300,
+          "paid_members_on_flight": 0,
+          "member_seat_share": 0.0,
+          "cargo_plume_pax": 9,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX255",
+          "departure_local": "2026-11-16T23:55:00+08:00",
+          "seats": 300,
+          "paid_members_on_flight": 1,
+          "member_seat_share": 0.0033,
+          "cargo_plume_pax": 12,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX165",
+          "departure_local": "2026-11-17T08:40:00+08:00",
+          "seats": 280,
+          "paid_members_on_flight": 0,
+          "member_seat_share": 0.0,
+          "cargo_plume_pax": 5,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX259",
+          "departure_local": "2026-11-17T09:30:00+08:00",
+          "seats": 260,
+          "paid_members_on_flight": 0,
+          "member_seat_share": 0.0,
+          "cargo_plume_pax": 10,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX261",
+          "departure_local": "2026-11-17T23:40:00+08:00",
+          "seats": 294,
+          "paid_members_on_flight": 1,
+          "member_seat_share": 0.0034,
+          "cargo_plume_pax": 14,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX263",
+          "departure_local": "2026-11-18T09:30:00+08:00",
+          "seats": 334,
+          "paid_members_on_flight": 0,
+          "member_seat_share": 0.0,
+          "cargo_plume_pax": 6,
+          "matches_cargo_plume_pax": null
+        }
+      ]
+    },
+    "tracking": {
+      "T1_days_join_to_first_paid_p50": 15.52,
+      "T1_days_join_to_first_paid_p90": 30.9,
+      "T1_members_with_first_paid": 30,
+      "T2_service_booking_conversion": 0.2344,
+      "T3_invites_sent": 9,
+      "T3_accept_rate": 0.7778,
+      "T3_authorization_rate_among_accepted": 0.5714,
+      "T3_authorization_rate_among_invited": 0.4444,
+      "T4_tier_counts": {
+        "Silver": 35,
+        "Green": 66,
+        "Diamond": 6,
+        "Gold": 21
+      },
+      "T4_tier_usage_rate": {
+        "Silver": 0.1429,
+        "Green": 0.2576,
+        "Diamond": 0.0,
+        "Gold": 0.381
+      },
+      "T5_alert_count": 0,
+      "T5_alerts": []
+    },
+    "commercial": {
+      "C1_service_revenue_hkd": 53100,
+      "C1_contribution_profit_hkd": 34515.0,
+      "C1_cost_assumption_locked": false,
+      "C1_paid_orders": 30,
+      "C2_incremental_ticket_revenue_completed_weeks_hkd": 57800,
+      "C2_incremental_ticket_revenue_partial_current_week_hkd": 8800,
+      "C3_promo_order_rate": 0.3667,
+      "C3_proposed_family_promo_orders": 8,
+      "C3_official_student_promo_orders": 3,
+      "C3_proposed_family_promo_revenue_hkd": 14100,
+      "C3_roi": null,
+      "C3_roi_note": "ROI left blank until assumed costs are locked."
+    }
+  },
+  "C": {
+    "t_demo": "2026-09-16T09:30:00+08:00",
+    "growth": {
+      "G1_cumulative_members": 213,
+      "G1_new_members_today": 0,
+      "G1_new_members_this_week": 4,
+      "G1_new_this_week_by_persona": {
+        "student_uk": 2,
+        "student_au": 1,
+        "parent_hk": 1
+      },
+      "G2_join_conversion_reach_to_complete": 0.8838,
+      "G2_reach": 241,
+      "G2_start_join": 221,
+      "G2_complete_join": 213,
+      "G3_new_today_vs_yesterday": -3,
+      "G4_cargo_window_member_seat_share": [
+        {
+          "flight_id": "CX239",
+          "departure_local": "2026-11-15T08:15:00+08:00",
+          "seats": 280,
+          "paid_members_on_flight": 4,
+          "member_seat_share": 0.0143,
+          "cargo_plume_pax": 8,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX257",
+          "departure_local": "2026-11-15T09:30:00+08:00",
+          "seats": 334,
+          "paid_members_on_flight": 5,
+          "member_seat_share": 0.015,
+          "cargo_plume_pax": 20,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX161",
+          "departure_local": "2026-11-15T09:55:00+08:00",
+          "seats": 280,
+          "paid_members_on_flight": 1,
+          "member_seat_share": 0.0036,
+          "cargo_plume_pax": 7,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX237",
+          "departure_local": "2026-11-15T14:20:00+08:00",
+          "seats": 312,
+          "paid_members_on_flight": 3,
+          "member_seat_share": 0.0096,
+          "cargo_plume_pax": 15,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX105",
+          "departure_local": "2026-11-15T19:05:00+08:00",
+          "seats": 334,
+          "paid_members_on_flight": 4,
+          "member_seat_share": 0.012,
+          "cargo_plume_pax": 11,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX249",
+          "departure_local": "2026-11-15T21:10:00+08:00",
+          "seats": 334,
+          "paid_members_on_flight": 4,
+          "member_seat_share": 0.012,
+          "cargo_plume_pax": 17,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX111",
+          "departure_local": "2026-11-15T21:40:00+08:00",
+          "seats": 368,
+          "paid_members_on_flight": 5,
+          "member_seat_share": 0.0136,
+          "cargo_plume_pax": 14,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX251",
+          "departure_local": "2026-11-15T23:40:00+08:00",
+          "seats": 368,
+          "paid_members_on_flight": 8,
+          "member_seat_share": 0.0217,
+          "cargo_plume_pax": 28,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX139",
+          "departure_local": "2026-11-16T08:40:00+08:00",
+          "seats": 280,
+          "paid_members_on_flight": 3,
+          "member_seat_share": 0.0107,
+          "cargo_plume_pax": 6,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX253",
+          "departure_local": "2026-11-16T09:30:00+08:00",
+          "seats": 280,
+          "paid_members_on_flight": 4,
+          "member_seat_share": 0.0143,
+          "cargo_plume_pax": 16,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX163",
+          "departure_local": "2026-11-16T20:20:00+08:00",
+          "seats": 312,
+          "paid_members_on_flight": 3,
+          "member_seat_share": 0.0096,
+          "cargo_plume_pax": 8,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX101",
+          "departure_local": "2026-11-16T20:55:00+08:00",
+          "seats": 300,
+          "paid_members_on_flight": 3,
+          "member_seat_share": 0.01,
+          "cargo_plume_pax": 9,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX255",
+          "departure_local": "2026-11-16T23:55:00+08:00",
+          "seats": 300,
+          "paid_members_on_flight": 4,
+          "member_seat_share": 0.0133,
+          "cargo_plume_pax": 12,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX165",
+          "departure_local": "2026-11-17T08:40:00+08:00",
+          "seats": 280,
+          "paid_members_on_flight": 1,
+          "member_seat_share": 0.0036,
+          "cargo_plume_pax": 5,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX259",
+          "departure_local": "2026-11-17T09:30:00+08:00",
+          "seats": 260,
+          "paid_members_on_flight": 1,
+          "member_seat_share": 0.0038,
+          "cargo_plume_pax": 10,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX261",
+          "departure_local": "2026-11-17T23:40:00+08:00",
+          "seats": 294,
+          "paid_members_on_flight": 3,
+          "member_seat_share": 0.0102,
+          "cargo_plume_pax": 14,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX263",
+          "departure_local": "2026-11-18T09:30:00+08:00",
+          "seats": 334,
+          "paid_members_on_flight": 0,
+          "member_seat_share": 0.0,
+          "cargo_plume_pax": 6,
+          "matches_cargo_plume_pax": null
+        }
+      ]
+    },
+    "tracking": {
+      "T1_days_join_to_first_paid_p50": 22.29,
+      "T1_days_join_to_first_paid_p90": 72.12,
+      "T1_members_with_first_paid": 80,
+      "T2_service_booking_conversion": 0.3756,
+      "T3_invites_sent": 37,
+      "T3_accept_rate": 0.7838,
+      "T3_authorization_rate_among_accepted": 0.4138,
+      "T3_authorization_rate_among_invited": 0.3243,
+      "T4_tier_counts": {
+        "Silver": 53,
+        "Green": 109,
+        "Diamond": 15,
+        "Gold": 36
+      },
+      "T4_tier_usage_rate": {
+        "Silver": 0.3962,
+        "Green": 0.367,
+        "Diamond": 0.3333,
+        "Gold": 0.3889
+      },
+      "T5_alert_count": 0,
+      "T5_alerts": []
+    },
+    "commercial": {
+      "C1_service_revenue_hkd": 144950,
+      "C1_contribution_profit_hkd": 94217.5,
+      "C1_cost_assumption_locked": false,
+      "C1_paid_orders": 80,
+      "C2_incremental_ticket_revenue_completed_weeks_hkd": 103300,
+      "C2_incremental_ticket_revenue_partial_current_week_hkd": 6700,
+      "C3_promo_order_rate": 0.4375,
+      "C3_proposed_family_promo_orders": 27,
+      "C3_official_student_promo_orders": 8,
+      "C3_proposed_family_promo_revenue_hkd": 48650,
+      "C3_roi": null,
+      "C3_roi_note": "ROI left blank until assumed costs are locked."
+    }
+  },
+  "D": {
+    "t_demo": "2026-10-21T09:30:00+08:00",
+    "growth": {
+      "G1_cumulative_members": 262,
+      "G1_new_members_today": 0,
+      "G1_new_members_this_week": 3,
+      "G1_new_this_week_by_persona": {
+        "student_uk": 1,
+        "student_au": 2
+      },
+      "G2_join_conversion_reach_to_complete": 0.9193,
+      "G2_reach": 285,
+      "G2_start_join": 268,
+      "G2_complete_join": 262,
+      "G3_new_today_vs_yesterday": -2,
+      "G4_cargo_window_member_seat_share": [
+        {
+          "flight_id": "CX239",
+          "departure_local": "2026-11-15T08:15:00+08:00",
+          "seats": 280,
+          "paid_members_on_flight": 7,
+          "member_seat_share": 0.025,
+          "cargo_plume_pax": 8,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX257",
+          "departure_local": "2026-11-15T09:30:00+08:00",
+          "seats": 334,
+          "paid_members_on_flight": 11,
+          "member_seat_share": 0.0329,
+          "cargo_plume_pax": 20,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX161",
+          "departure_local": "2026-11-15T09:55:00+08:00",
+          "seats": 280,
+          "paid_members_on_flight": 5,
+          "member_seat_share": 0.0179,
+          "cargo_plume_pax": 7,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX237",
+          "departure_local": "2026-11-15T14:20:00+08:00",
+          "seats": 312,
+          "paid_members_on_flight": 8,
+          "member_seat_share": 0.0256,
+          "cargo_plume_pax": 15,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX105",
+          "departure_local": "2026-11-15T19:05:00+08:00",
+          "seats": 334,
+          "paid_members_on_flight": 7,
+          "member_seat_share": 0.021,
+          "cargo_plume_pax": 11,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX249",
+          "departure_local": "2026-11-15T21:10:00+08:00",
+          "seats": 334,
+          "paid_members_on_flight": 11,
+          "member_seat_share": 0.0329,
+          "cargo_plume_pax": 17,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX111",
+          "departure_local": "2026-11-15T21:40:00+08:00",
+          "seats": 368,
+          "paid_members_on_flight": 10,
+          "member_seat_share": 0.0272,
+          "cargo_plume_pax": 14,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX251",
+          "departure_local": "2026-11-15T23:40:00+08:00",
+          "seats": 368,
+          "paid_members_on_flight": 19,
+          "member_seat_share": 0.0516,
+          "cargo_plume_pax": 28,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX139",
+          "departure_local": "2026-11-16T08:40:00+08:00",
+          "seats": 280,
+          "paid_members_on_flight": 5,
+          "member_seat_share": 0.0179,
+          "cargo_plume_pax": 6,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX253",
+          "departure_local": "2026-11-16T09:30:00+08:00",
+          "seats": 280,
+          "paid_members_on_flight": 11,
+          "member_seat_share": 0.0393,
+          "cargo_plume_pax": 16,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX163",
+          "departure_local": "2026-11-16T20:20:00+08:00",
+          "seats": 312,
+          "paid_members_on_flight": 6,
+          "member_seat_share": 0.0192,
+          "cargo_plume_pax": 8,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX101",
+          "departure_local": "2026-11-16T20:55:00+08:00",
+          "seats": 300,
+          "paid_members_on_flight": 7,
+          "member_seat_share": 0.0233,
+          "cargo_plume_pax": 9,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX255",
+          "departure_local": "2026-11-16T23:55:00+08:00",
+          "seats": 300,
+          "paid_members_on_flight": 9,
+          "member_seat_share": 0.03,
+          "cargo_plume_pax": 12,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX165",
+          "departure_local": "2026-11-17T08:40:00+08:00",
+          "seats": 280,
+          "paid_members_on_flight": 4,
+          "member_seat_share": 0.0143,
+          "cargo_plume_pax": 5,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX259",
+          "departure_local": "2026-11-17T09:30:00+08:00",
+          "seats": 260,
+          "paid_members_on_flight": 2,
+          "member_seat_share": 0.0077,
+          "cargo_plume_pax": 10,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX261",
+          "departure_local": "2026-11-17T23:40:00+08:00",
+          "seats": 294,
+          "paid_members_on_flight": 10,
+          "member_seat_share": 0.034,
+          "cargo_plume_pax": 14,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX263",
+          "departure_local": "2026-11-18T09:30:00+08:00",
+          "seats": 334,
+          "paid_members_on_flight": 4,
+          "member_seat_share": 0.012,
+          "cargo_plume_pax": 6,
+          "matches_cargo_plume_pax": null
+        }
+      ]
+    },
+    "tracking": {
+      "T1_days_join_to_first_paid_p50": 29.14,
+      "T1_days_join_to_first_paid_p90": 75.89,
+      "T1_members_with_first_paid": 169,
+      "T2_service_booking_conversion": 0.645,
+      "T3_invites_sent": 54,
+      "T3_accept_rate": 0.8333,
+      "T3_authorization_rate_among_accepted": 0.5333,
+      "T3_authorization_rate_among_invited": 0.4444,
+      "T4_tier_counts": {
+        "Silver": 67,
+        "Green": 135,
+        "Gold": 44,
+        "Diamond": 16
+      },
+      "T4_tier_usage_rate": {
+        "Silver": 0.6418,
+        "Green": 0.637,
+        "Gold": 0.6364,
+        "Diamond": 0.75
+      },
+      "T5_alert_count": 0,
+      "T5_alerts": []
+    },
+    "commercial": {
+      "C1_service_revenue_hkd": 300400,
+      "C1_contribution_profit_hkd": 195260.0,
+      "C1_cost_assumption_locked": false,
+      "C1_paid_orders": 169,
+      "C2_incremental_ticket_revenue_completed_weeks_hkd": 126900,
+      "C2_incremental_ticket_revenue_partial_current_week_hkd": 3200,
+      "C3_promo_order_rate": 0.4438,
+      "C3_proposed_family_promo_orders": 54,
+      "C3_official_student_promo_orders": 21,
+      "C3_proposed_family_promo_revenue_hkd": 95250,
+      "C3_roi": null,
+      "C3_roi_note": "ROI left blank until assumed costs are locked."
+    }
+  },
+  "P": {
+    "t_demo": "2026-11-10T09:30:00+08:00",
+    "growth": {
+      "G1_cumulative_members": 277,
+      "G1_new_members_today": 0,
+      "G1_new_members_this_week": 0,
+      "G1_new_this_week_by_persona": {},
+      "G2_join_conversion_reach_to_complete": 0.9023,
+      "G2_reach": 307,
+      "G2_start_join": 288,
+      "G2_complete_join": 277,
+      "G3_new_today_vs_yesterday": 0,
+      "G4_cargo_window_member_seat_share": [
+        {
+          "flight_id": "CX239",
+          "departure_local": "2026-11-15T08:15:00+08:00",
+          "seats": 280,
+          "paid_members_on_flight": 8,
+          "member_seat_share": 0.0286,
+          "cargo_plume_pax": 8,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX257",
+          "departure_local": "2026-11-15T09:30:00+08:00",
+          "seats": 334,
+          "paid_members_on_flight": 20,
+          "member_seat_share": 0.0599,
+          "cargo_plume_pax": 20,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX161",
+          "departure_local": "2026-11-15T09:55:00+08:00",
+          "seats": 280,
+          "paid_members_on_flight": 7,
+          "member_seat_share": 0.025,
+          "cargo_plume_pax": 7,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX237",
+          "departure_local": "2026-11-15T14:20:00+08:00",
+          "seats": 312,
+          "paid_members_on_flight": 14,
+          "member_seat_share": 0.0449,
+          "cargo_plume_pax": 15,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX105",
+          "departure_local": "2026-11-15T19:05:00+08:00",
+          "seats": 334,
+          "paid_members_on_flight": 11,
+          "member_seat_share": 0.0329,
+          "cargo_plume_pax": 11,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX249",
+          "departure_local": "2026-11-15T21:10:00+08:00",
+          "seats": 334,
+          "paid_members_on_flight": 15,
+          "member_seat_share": 0.0449,
+          "cargo_plume_pax": 17,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX111",
+          "departure_local": "2026-11-15T21:40:00+08:00",
+          "seats": 368,
+          "paid_members_on_flight": 14,
+          "member_seat_share": 0.038,
+          "cargo_plume_pax": 14,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX251",
+          "departure_local": "2026-11-15T23:40:00+08:00",
+          "seats": 368,
+          "paid_members_on_flight": 26,
+          "member_seat_share": 0.0707,
+          "cargo_plume_pax": 28,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX139",
+          "departure_local": "2026-11-16T08:40:00+08:00",
+          "seats": 280,
+          "paid_members_on_flight": 6,
+          "member_seat_share": 0.0214,
+          "cargo_plume_pax": 6,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX253",
+          "departure_local": "2026-11-16T09:30:00+08:00",
+          "seats": 280,
+          "paid_members_on_flight": 14,
+          "member_seat_share": 0.05,
+          "cargo_plume_pax": 16,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX163",
+          "departure_local": "2026-11-16T20:20:00+08:00",
+          "seats": 312,
+          "paid_members_on_flight": 8,
+          "member_seat_share": 0.0256,
+          "cargo_plume_pax": 8,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX101",
+          "departure_local": "2026-11-16T20:55:00+08:00",
+          "seats": 300,
+          "paid_members_on_flight": 9,
+          "member_seat_share": 0.03,
+          "cargo_plume_pax": 9,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX255",
+          "departure_local": "2026-11-16T23:55:00+08:00",
+          "seats": 300,
+          "paid_members_on_flight": 11,
+          "member_seat_share": 0.0367,
+          "cargo_plume_pax": 12,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX165",
+          "departure_local": "2026-11-17T08:40:00+08:00",
+          "seats": 280,
+          "paid_members_on_flight": 5,
+          "member_seat_share": 0.0179,
+          "cargo_plume_pax": 5,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX259",
+          "departure_local": "2026-11-17T09:30:00+08:00",
+          "seats": 260,
+          "paid_members_on_flight": 10,
+          "member_seat_share": 0.0385,
+          "cargo_plume_pax": 10,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX261",
+          "departure_local": "2026-11-17T23:40:00+08:00",
+          "seats": 294,
+          "paid_members_on_flight": 14,
+          "member_seat_share": 0.0476,
+          "cargo_plume_pax": 14,
+          "matches_cargo_plume_pax": null
+        },
+        {
+          "flight_id": "CX263",
+          "departure_local": "2026-11-18T09:30:00+08:00",
+          "seats": 334,
+          "paid_members_on_flight": 6,
+          "member_seat_share": 0.018,
+          "cargo_plume_pax": 6,
+          "matches_cargo_plume_pax": null
+        }
+      ]
+    },
+    "tracking": {
+      "T1_days_join_to_first_paid_p50": 34.34,
+      "T1_days_join_to_first_paid_p90": 88.5,
+      "T1_members_with_first_paid": 236,
+      "T2_service_booking_conversion": 0.852,
+      "T3_invites_sent": 67,
+      "T3_accept_rate": 0.8209,
+      "T3_authorization_rate_among_accepted": 0.5273,
+      "T3_authorization_rate_among_invited": 0.4328,
+      "T4_tier_counts": {
+        "Silver": 74,
+        "Green": 140,
+        "Gold": 45,
+        "Diamond": 18
+      },
+      "T4_tier_usage_rate": {
+        "Silver": 0.8378,
+        "Green": 0.85,
+        "Gold": 0.8889,
+        "Diamond": 0.8333
+      },
+      "T5_alert_count": 0,
+      "T5_alerts": []
+    },
+    "commercial": {
+      "C1_service_revenue_hkd": 427600,
+      "C1_contribution_profit_hkd": 277940.0,
+      "C1_cost_assumption_locked": false,
+      "C1_paid_orders": 236,
+      "C2_incremental_ticket_revenue_completed_weeks_hkd": 141000,
+      "C2_incremental_ticket_revenue_partial_current_week_hkd": 8800,
+      "C3_promo_order_rate": 0.4195,
+      "C3_proposed_family_promo_orders": 70,
+      "C3_official_student_promo_orders": 29,
+      "C3_proposed_family_promo_revenue_hkd": 126350,
+      "C3_roi": null,
+      "C3_roi_note": "ROI left blank until assumed costs are locked."
+    }
+  },
+  "CARGO": {
+    "t_demo": "2026-11-15T05:30:00+08:00",
+    "growth": {
+      "G1_cumulative_members": 282,
+      "G1_new_members_today": 0,
+      "G1_new_members_this_week": 5,
+      "G1_new_this_week_by_persona": {
+        "student_au": 3,
+        "parent_hk": 2
+      },
+      "G2_join_conversion_reach_to_complete": 0.9186,
+      "G2_reach": 307,
+      "G2_start_join": 291,
+      "G2_complete_join": 282,
+      "G3_new_today_vs_yesterday": -2,
+      "G4_cargo_window_member_seat_share": [
+        {
+          "flight_id": "CX239",
+          "departure_local": "2026-11-15T08:15:00+08:00",
+          "seats": 280,
+          "paid_members_on_flight": 8,
+          "member_seat_share": 0.0286,
+          "cargo_plume_pax": 8,
+          "matches_cargo_plume_pax": true
+        },
+        {
+          "flight_id": "CX257",
+          "departure_local": "2026-11-15T09:30:00+08:00",
+          "seats": 334,
+          "paid_members_on_flight": 20,
+          "member_seat_share": 0.0599,
+          "cargo_plume_pax": 20,
+          "matches_cargo_plume_pax": true
+        },
+        {
+          "flight_id": "CX161",
+          "departure_local": "2026-11-15T09:55:00+08:00",
+          "seats": 280,
+          "paid_members_on_flight": 7,
+          "member_seat_share": 0.025,
+          "cargo_plume_pax": 7,
+          "matches_cargo_plume_pax": true
+        },
+        {
+          "flight_id": "CX237",
+          "departure_local": "2026-11-15T14:20:00+08:00",
+          "seats": 312,
+          "paid_members_on_flight": 15,
+          "member_seat_share": 0.0481,
+          "cargo_plume_pax": 15,
+          "matches_cargo_plume_pax": true
+        },
+        {
+          "flight_id": "CX105",
+          "departure_local": "2026-11-15T19:05:00+08:00",
+          "seats": 334,
+          "paid_members_on_flight": 11,
+          "member_seat_share": 0.0329,
+          "cargo_plume_pax": 11,
+          "matches_cargo_plume_pax": true
+        },
+        {
+          "flight_id": "CX249",
+          "departure_local": "2026-11-15T21:10:00+08:00",
+          "seats": 334,
+          "paid_members_on_flight": 17,
+          "member_seat_share": 0.0509,
+          "cargo_plume_pax": 17,
+          "matches_cargo_plume_pax": true
+        },
+        {
+          "flight_id": "CX111",
+          "departure_local": "2026-11-15T21:40:00+08:00",
+          "seats": 368,
+          "paid_members_on_flight": 14,
+          "member_seat_share": 0.038,
+          "cargo_plume_pax": 14,
+          "matches_cargo_plume_pax": true
+        },
+        {
+          "flight_id": "CX251",
+          "departure_local": "2026-11-15T23:40:00+08:00",
+          "seats": 368,
+          "paid_members_on_flight": 28,
+          "member_seat_share": 0.0761,
+          "cargo_plume_pax": 28,
+          "matches_cargo_plume_pax": true
+        },
+        {
+          "flight_id": "CX139",
+          "departure_local": "2026-11-16T08:40:00+08:00",
+          "seats": 280,
+          "paid_members_on_flight": 6,
+          "member_seat_share": 0.0214,
+          "cargo_plume_pax": 6,
+          "matches_cargo_plume_pax": true
+        },
+        {
+          "flight_id": "CX253",
+          "departure_local": "2026-11-16T09:30:00+08:00",
+          "seats": 280,
+          "paid_members_on_flight": 16,
+          "member_seat_share": 0.0571,
+          "cargo_plume_pax": 16,
+          "matches_cargo_plume_pax": true
+        },
+        {
+          "flight_id": "CX163",
+          "departure_local": "2026-11-16T20:20:00+08:00",
+          "seats": 312,
+          "paid_members_on_flight": 8,
+          "member_seat_share": 0.0256,
+          "cargo_plume_pax": 8,
+          "matches_cargo_plume_pax": true
+        },
+        {
+          "flight_id": "CX101",
+          "departure_local": "2026-11-16T20:55:00+08:00",
+          "seats": 300,
+          "paid_members_on_flight": 9,
+          "member_seat_share": 0.03,
+          "cargo_plume_pax": 9,
+          "matches_cargo_plume_pax": true
+        },
+        {
+          "flight_id": "CX255",
+          "departure_local": "2026-11-16T23:55:00+08:00",
+          "seats": 300,
+          "paid_members_on_flight": 12,
+          "member_seat_share": 0.04,
+          "cargo_plume_pax": 12,
+          "matches_cargo_plume_pax": true
+        },
+        {
+          "flight_id": "CX165",
+          "departure_local": "2026-11-17T08:40:00+08:00",
+          "seats": 280,
+          "paid_members_on_flight": 5,
+          "member_seat_share": 0.0179,
+          "cargo_plume_pax": 5,
+          "matches_cargo_plume_pax": true
+        },
+        {
+          "flight_id": "CX259",
+          "departure_local": "2026-11-17T09:30:00+08:00",
+          "seats": 260,
+          "paid_members_on_flight": 10,
+          "member_seat_share": 0.0385,
+          "cargo_plume_pax": 10,
+          "matches_cargo_plume_pax": true
+        },
+        {
+          "flight_id": "CX261",
+          "departure_local": "2026-11-17T23:40:00+08:00",
+          "seats": 294,
+          "paid_members_on_flight": 14,
+          "member_seat_share": 0.0476,
+          "cargo_plume_pax": 14,
+          "matches_cargo_plume_pax": true
+        },
+        {
+          "flight_id": "CX263",
+          "departure_local": "2026-11-18T09:30:00+08:00",
+          "seats": 334,
+          "paid_members_on_flight": 6,
+          "member_seat_share": 0.018,
+          "cargo_plume_pax": 6,
+          "matches_cargo_plume_pax": true
+        }
+      ]
+    },
+    "tracking": {
+      "T1_days_join_to_first_paid_p50": 34.02,
+      "T1_days_join_to_first_paid_p90": 88.29,
+      "T1_members_with_first_paid": 245,
+      "T2_service_booking_conversion": 0.8688,
+      "T3_invites_sent": 69,
+      "T3_accept_rate": 0.7971,
+      "T3_authorization_rate_among_accepted": 0.5273,
+      "T3_authorization_rate_among_invited": 0.4203,
+      "T4_tier_counts": {
+        "Silver": 74,
+        "Green": 143,
+        "Gold": 47,
+        "Diamond": 18
+      },
+      "T4_tier_usage_rate": {
+        "Silver": 0.8649,
+        "Green": 0.8531,
+        "Gold": 0.8936,
+        "Diamond": 0.9444
+      },
+      "T5_alert_count": 4,
+      "T5_alerts": [
+        {
+          "order_id": "O00269",
+          "member_id": "persona-alex",
+          "flight_id": "CX105",
+          "hours_to_departure": 13.58,
+          "reason": "unpaid_inside_cutoff",
+          "flight_state": "Scheduled",
+          "out_gate_timeliness": null
+        },
+        {
+          "order_id": "O00270",
+          "member_id": "M-STUK-111",
+          "flight_id": "CX239",
+          "hours_to_departure": 2.75,
+          "reason": "unpaid_inside_cutoff",
+          "flight_state": "Scheduled",
+          "out_gate_timeliness": null
+        },
+        {
+          "order_id": "O00271",
+          "member_id": "M-STUK-120",
+          "flight_id": "CX239",
+          "hours_to_departure": 2.75,
+          "reason": "unpaid_inside_cutoff",
+          "flight_state": "Scheduled",
+          "out_gate_timeliness": null
+        },
+        {
+          "order_id": "O00272",
+          "member_id": "M-STUK-083",
+          "flight_id": "CX239",
+          "hours_to_departure": 2.75,
+          "reason": "unpaid_inside_cutoff",
+          "flight_state": "Scheduled",
+          "out_gate_timeliness": null
+        }
+      ]
+    },
+    "commercial": {
+      "C1_service_revenue_hkd": 444200,
+      "C1_contribution_profit_hkd": 288730.0,
+      "C1_cost_assumption_locked": false,
+      "C1_paid_orders": 245,
+      "C2_incremental_ticket_revenue_completed_weeks_hkd": 149800,
+      "C2_incremental_ticket_revenue_partial_current_week_hkd": 0,
+      "C3_promo_order_rate": 0.4122,
+      "C3_proposed_family_promo_orders": 72,
+      "C3_official_student_promo_orders": 29,
+      "C3_proposed_family_promo_revenue_hkd": 129000,
+      "C3_roi": null,
+      "C3_roi_note": "ROI left blank until assumed costs are locked."
+    }
+  },
+  "E": {
+    "t_demo": "2027-01-13T09:30:00+08:00",
+    "growth": {
+      "G1_cumulative_members": 296,
+      "G1_new_members_today": 0,
+      "G1_new_members_this_week": 1,
+      "G1_new_this_week_by_persona": {
+        "parent_victoria": 1
+      },
+      "G2_join_conversion_reach_to_complete": 0.8836,
+      "G2_reach": 335,
+      "G2_start_join": 311,
+      "G2_complete_join": 296,
+      "G3_new_today_vs_yesterday": -1,
+      "G4_cargo_window_member_seat_share": [
+        {
+          "flight_id": "CX239",
+          "departure_local": "2026-11-15T08:15:00+08:00",
+          "seats": 280,
+          "paid_members_on_flight": 8,
+          "member_seat_share": 0.0286,
+          "cargo_plume_pax": 8,
+          "matches_cargo_plume_pax": true
+        },
+        {
+          "flight_id": "CX257",
+          "departure_local": "2026-11-15T09:30:00+08:00",
+          "seats": 334,
+          "paid_members_on_flight": 20,
+          "member_seat_share": 0.0599,
+          "cargo_plume_pax": 20,
+          "matches_cargo_plume_pax": true
+        },
+        {
+          "flight_id": "CX161",
+          "departure_local": "2026-11-15T09:55:00+08:00",
+          "seats": 280,
+          "paid_members_on_flight": 7,
+          "member_seat_share": 0.025,
+          "cargo_plume_pax": 7,
+          "matches_cargo_plume_pax": true
+        },
+        {
+          "flight_id": "CX237",
+          "departure_local": "2026-11-15T14:20:00+08:00",
+          "seats": 312,
+          "paid_members_on_flight": 15,
+          "member_seat_share": 0.0481,
+          "cargo_plume_pax": 15,
+          "matches_cargo_plume_pax": true
+        },
+        {
+          "flight_id": "CX105",
+          "departure_local": "2026-11-15T19:05:00+08:00",
+          "seats": 334,
+          "paid_members_on_flight": 11,
+          "member_seat_share": 0.0329,
+          "cargo_plume_pax": 11,
+          "matches_cargo_plume_pax": true
+        },
+        {
+          "flight_id": "CX249",
+          "departure_local": "2026-11-15T21:10:00+08:00",
+          "seats": 334,
+          "paid_members_on_flight": 17,
+          "member_seat_share": 0.0509,
+          "cargo_plume_pax": 17,
+          "matches_cargo_plume_pax": true
+        },
+        {
+          "flight_id": "CX111",
+          "departure_local": "2026-11-15T21:40:00+08:00",
+          "seats": 368,
+          "paid_members_on_flight": 14,
+          "member_seat_share": 0.038,
+          "cargo_plume_pax": 14,
+          "matches_cargo_plume_pax": true
+        },
+        {
+          "flight_id": "CX251",
+          "departure_local": "2026-11-15T23:40:00+08:00",
+          "seats": 368,
+          "paid_members_on_flight": 28,
+          "member_seat_share": 0.0761,
+          "cargo_plume_pax": 28,
+          "matches_cargo_plume_pax": true
+        },
+        {
+          "flight_id": "CX139",
+          "departure_local": "2026-11-16T08:40:00+08:00",
+          "seats": 280,
+          "paid_members_on_flight": 6,
+          "member_seat_share": 0.0214,
+          "cargo_plume_pax": 6,
+          "matches_cargo_plume_pax": true
+        },
+        {
+          "flight_id": "CX253",
+          "departure_local": "2026-11-16T09:30:00+08:00",
+          "seats": 280,
+          "paid_members_on_flight": 16,
+          "member_seat_share": 0.0571,
+          "cargo_plume_pax": 16,
+          "matches_cargo_plume_pax": true
+        },
+        {
+          "flight_id": "CX163",
+          "departure_local": "2026-11-16T20:20:00+08:00",
+          "seats": 312,
+          "paid_members_on_flight": 8,
+          "member_seat_share": 0.0256,
+          "cargo_plume_pax": 8,
+          "matches_cargo_plume_pax": true
+        },
+        {
+          "flight_id": "CX101",
+          "departure_local": "2026-11-16T20:55:00+08:00",
+          "seats": 300,
+          "paid_members_on_flight": 9,
+          "member_seat_share": 0.03,
+          "cargo_plume_pax": 9,
+          "matches_cargo_plume_pax": true
+        },
+        {
+          "flight_id": "CX255",
+          "departure_local": "2026-11-16T23:55:00+08:00",
+          "seats": 300,
+          "paid_members_on_flight": 12,
+          "member_seat_share": 0.04,
+          "cargo_plume_pax": 12,
+          "matches_cargo_plume_pax": true
+        },
+        {
+          "flight_id": "CX165",
+          "departure_local": "2026-11-17T08:40:00+08:00",
+          "seats": 280,
+          "paid_members_on_flight": 5,
+          "member_seat_share": 0.0179,
+          "cargo_plume_pax": 5,
+          "matches_cargo_plume_pax": true
+        },
+        {
+          "flight_id": "CX259",
+          "departure_local": "2026-11-17T09:30:00+08:00",
+          "seats": 260,
+          "paid_members_on_flight": 10,
+          "member_seat_share": 0.0385,
+          "cargo_plume_pax": 10,
+          "matches_cargo_plume_pax": true
+        },
+        {
+          "flight_id": "CX261",
+          "departure_local": "2026-11-17T23:40:00+08:00",
+          "seats": 294,
+          "paid_members_on_flight": 14,
+          "member_seat_share": 0.0476,
+          "cargo_plume_pax": 14,
+          "matches_cargo_plume_pax": true
+        },
+        {
+          "flight_id": "CX263",
+          "departure_local": "2026-11-18T09:30:00+08:00",
+          "seats": 334,
+          "paid_members_on_flight": 6,
+          "member_seat_share": 0.018,
+          "cargo_plume_pax": 6,
+          "matches_cargo_plume_pax": true
+        }
+      ]
+    },
+    "tracking": {
+      "T1_days_join_to_first_paid_p50": 32.58,
+      "T1_days_join_to_first_paid_p90": 86.53,
+      "T1_members_with_first_paid": 259,
+      "T2_service_booking_conversion": 0.875,
+      "T3_invites_sent": 75,
+      "T3_accept_rate": 0.7867,
+      "T3_authorization_rate_among_accepted": 0.5424,
+      "T3_authorization_rate_among_invited": 0.4267,
+      "T4_tier_counts": {
+        "Silver": 77,
+        "Green": 151,
+        "Gold": 49,
+        "Diamond": 11,
+        "Diamond Exec": 8
+      },
+      "T4_tier_usage_rate": {
+        "Silver": 0.8701,
+        "Green": 0.8477,
+        "Gold": 0.9184,
+        "Diamond": 1.0,
+        "Diamond Exec": 1.0
+      },
+      "T5_alert_count": 0,
+      "T5_alerts": []
+    },
+    "commercial": {
+      "C1_service_revenue_hkd": 469950,
+      "C1_contribution_profit_hkd": 305467.5,
+      "C1_cost_assumption_locked": false,
+      "C1_paid_orders": 259,
+      "C2_incremental_ticket_revenue_completed_weeks_hkd": 188400,
+      "C2_incremental_ticket_revenue_partial_current_week_hkd": 9400,
+      "C3_promo_order_rate": 0.417,
+      "C3_proposed_family_promo_orders": 77,
+      "C3_official_student_promo_orders": 31,
+      "C3_proposed_family_promo_revenue_hkd": 137650,
+      "C3_roi": null,
+      "C3_roi_note": "ROI left blank until assumed costs are locked."
+    }
+  },
+  "S": {
+    "t_demo": "2027-01-20T09:30:00+08:00",
+    "growth": {
+      "G1_cumulative_members": 303,
+      "G1_new_members_today": 0,
+      "G1_new_members_this_week": 2,
+      "G1_new_this_week_by_persona": {
+        "student_uk": 2
+      },
+      "G2_join_conversion_reach_to_complete": 0.8886,
+      "G2_reach": 341,
+      "G2_start_join": 317,
+      "G2_complete_join": 303,
+      "G3_new_today_vs_yesterday": -1,
+      "G4_cargo_window_member_seat_share": [
+        {
+          "flight_id": "CX239",
+          "departure_local": "2026-11-15T08:15:00+08:00",
+          "seats": 280,
+          "paid_members_on_flight": 8,
+          "member_seat_share": 0.0286,
+          "cargo_plume_pax": 8,
+          "matches_cargo_plume_pax": true
+        },
+        {
+          "flight_id": "CX257",
+          "departure_local": "2026-11-15T09:30:00+08:00",
+          "seats": 334,
+          "paid_members_on_flight": 20,
+          "member_seat_share": 0.0599,
+          "cargo_plume_pax": 20,
+          "matches_cargo_plume_pax": true
+        },
+        {
+          "flight_id": "CX161",
+          "departure_local": "2026-11-15T09:55:00+08:00",
+          "seats": 280,
+          "paid_members_on_flight": 7,
+          "member_seat_share": 0.025,
+          "cargo_plume_pax": 7,
+          "matches_cargo_plume_pax": true
+        },
+        {
+          "flight_id": "CX237",
+          "departure_local": "2026-11-15T14:20:00+08:00",
+          "seats": 312,
+          "paid_members_on_flight": 15,
+          "member_seat_share": 0.0481,
+          "cargo_plume_pax": 15,
+          "matches_cargo_plume_pax": true
+        },
+        {
+          "flight_id": "CX105",
+          "departure_local": "2026-11-15T19:05:00+08:00",
+          "seats": 334,
+          "paid_members_on_flight": 11,
+          "member_seat_share": 0.0329,
+          "cargo_plume_pax": 11,
+          "matches_cargo_plume_pax": true
+        },
+        {
+          "flight_id": "CX249",
+          "departure_local": "2026-11-15T21:10:00+08:00",
+          "seats": 334,
+          "paid_members_on_flight": 17,
+          "member_seat_share": 0.0509,
+          "cargo_plume_pax": 17,
+          "matches_cargo_plume_pax": true
+        },
+        {
+          "flight_id": "CX111",
+          "departure_local": "2026-11-15T21:40:00+08:00",
+          "seats": 368,
+          "paid_members_on_flight": 14,
+          "member_seat_share": 0.038,
+          "cargo_plume_pax": 14,
+          "matches_cargo_plume_pax": true
+        },
+        {
+          "flight_id": "CX251",
+          "departure_local": "2026-11-15T23:40:00+08:00",
+          "seats": 368,
+          "paid_members_on_flight": 28,
+          "member_seat_share": 0.0761,
+          "cargo_plume_pax": 28,
+          "matches_cargo_plume_pax": true
+        },
+        {
+          "flight_id": "CX139",
+          "departure_local": "2026-11-16T08:40:00+08:00",
+          "seats": 280,
+          "paid_members_on_flight": 6,
+          "member_seat_share": 0.0214,
+          "cargo_plume_pax": 6,
+          "matches_cargo_plume_pax": true
+        },
+        {
+          "flight_id": "CX253",
+          "departure_local": "2026-11-16T09:30:00+08:00",
+          "seats": 280,
+          "paid_members_on_flight": 16,
+          "member_seat_share": 0.0571,
+          "cargo_plume_pax": 16,
+          "matches_cargo_plume_pax": true
+        },
+        {
+          "flight_id": "CX163",
+          "departure_local": "2026-11-16T20:20:00+08:00",
+          "seats": 312,
+          "paid_members_on_flight": 8,
+          "member_seat_share": 0.0256,
+          "cargo_plume_pax": 8,
+          "matches_cargo_plume_pax": true
+        },
+        {
+          "flight_id": "CX101",
+          "departure_local": "2026-11-16T20:55:00+08:00",
+          "seats": 300,
+          "paid_members_on_flight": 9,
+          "member_seat_share": 0.03,
+          "cargo_plume_pax": 9,
+          "matches_cargo_plume_pax": true
+        },
+        {
+          "flight_id": "CX255",
+          "departure_local": "2026-11-16T23:55:00+08:00",
+          "seats": 300,
+          "paid_members_on_flight": 12,
+          "member_seat_share": 0.04,
+          "cargo_plume_pax": 12,
+          "matches_cargo_plume_pax": true
+        },
+        {
+          "flight_id": "CX165",
+          "departure_local": "2026-11-17T08:40:00+08:00",
+          "seats": 280,
+          "paid_members_on_flight": 5,
+          "member_seat_share": 0.0179,
+          "cargo_plume_pax": 5,
+          "matches_cargo_plume_pax": true
+        },
+        {
+          "flight_id": "CX259",
+          "departure_local": "2026-11-17T09:30:00+08:00",
+          "seats": 260,
+          "paid_members_on_flight": 10,
+          "member_seat_share": 0.0385,
+          "cargo_plume_pax": 10,
+          "matches_cargo_plume_pax": true
+        },
+        {
+          "flight_id": "CX261",
+          "departure_local": "2026-11-17T23:40:00+08:00",
+          "seats": 294,
+          "paid_members_on_flight": 14,
+          "member_seat_share": 0.0476,
+          "cargo_plume_pax": 14,
+          "matches_cargo_plume_pax": true
+        },
+        {
+          "flight_id": "CX263",
+          "departure_local": "2026-11-18T09:30:00+08:00",
+          "seats": 334,
+          "paid_members_on_flight": 6,
+          "member_seat_share": 0.018,
+          "cargo_plume_pax": 6,
+          "matches_cargo_plume_pax": true
+        }
+      ]
+    },
+    "tracking": {
+      "T1_days_join_to_first_paid_p50": 32.58,
+      "T1_days_join_to_first_paid_p90": 86.53,
+      "T1_members_with_first_paid": 259,
+      "T2_service_booking_conversion": 0.8548,
+      "T3_invites_sent": 78,
+      "T3_accept_rate": 0.7949,
+      "T3_authorization_rate_among_accepted": 0.5323,
+      "T3_authorization_rate_among_invited": 0.4231,
+      "T4_tier_counts": {
+        "Silver": 79,
+        "Green": 156,
+        "Gold": 49,
+        "Diamond": 11,
+        "Diamond Exec": 8
+      },
+      "T4_tier_usage_rate": {
+        "Silver": 0.8481,
+        "Green": 0.8205,
+        "Gold": 0.9184,
+        "Diamond": 1.0,
+        "Diamond Exec": 1.0
+      },
+      "T5_alert_count": 0,
+      "T5_alerts": []
+    },
+    "commercial": {
+      "C1_service_revenue_hkd": 469950,
+      "C1_contribution_profit_hkd": 305467.5,
+      "C1_cost_assumption_locked": false,
+      "C1_paid_orders": 259,
+      "C2_incremental_ticket_revenue_completed_weeks_hkd": 197800,
+      "C2_incremental_ticket_revenue_partial_current_week_hkd": 6000,
+      "C3_promo_order_rate": 0.417,
+      "C3_proposed_family_promo_orders": 77,
+      "C3_official_student_promo_orders": 31,
+      "C3_proposed_family_promo_revenue_hkd": 137650,
+      "C3_roi": null,
+      "C3_roi_note": "ROI left blank until assumed costs are locked."
+    }
+  },
+  "F": {
+    "t_demo": "2027-02-24T09:30:00+08:00",
+    "growth": {
+      "G1_cumulative_members": 315,
+      "G1_new_members_today": 0,
+      "G1_new_members_this_week": 0,
+      "G1_new_this_week_by_persona": {},
+      "G2_join_conversion_reach_to_complete": 0.8824,
+      "G2_reach": 357,
+      "G2_start_join": 329,
+      "G2_complete_join": 315,
+      "G3_new_today_vs_yesterday": 0,
+      "G4_cargo_window_member_seat_share": [
+        {
+          "flight_id": "CX239",
+          "departure_local": "2026-11-15T08:15:00+08:00",
+          "seats": 280,
+          "paid_members_on_flight": 8,
+          "member_seat_share": 0.0286,
+          "cargo_plume_pax": 8,
+          "matches_cargo_plume_pax": true
+        },
+        {
+          "flight_id": "CX257",
+          "departure_local": "2026-11-15T09:30:00+08:00",
+          "seats": 334,
+          "paid_members_on_flight": 20,
+          "member_seat_share": 0.0599,
+          "cargo_plume_pax": 20,
+          "matches_cargo_plume_pax": true
+        },
+        {
+          "flight_id": "CX161",
+          "departure_local": "2026-11-15T09:55:00+08:00",
+          "seats": 280,
+          "paid_members_on_flight": 7,
+          "member_seat_share": 0.025,
+          "cargo_plume_pax": 7,
+          "matches_cargo_plume_pax": true
+        },
+        {
+          "flight_id": "CX237",
+          "departure_local": "2026-11-15T14:20:00+08:00",
+          "seats": 312,
+          "paid_members_on_flight": 15,
+          "member_seat_share": 0.0481,
+          "cargo_plume_pax": 15,
+          "matches_cargo_plume_pax": true
+        },
+        {
+          "flight_id": "CX105",
+          "departure_local": "2026-11-15T19:05:00+08:00",
+          "seats": 334,
+          "paid_members_on_flight": 11,
+          "member_seat_share": 0.0329,
+          "cargo_plume_pax": 11,
+          "matches_cargo_plume_pax": true
+        },
+        {
+          "flight_id": "CX249",
+          "departure_local": "2026-11-15T21:10:00+08:00",
+          "seats": 334,
+          "paid_members_on_flight": 17,
+          "member_seat_share": 0.0509,
+          "cargo_plume_pax": 17,
+          "matches_cargo_plume_pax": true
+        },
+        {
+          "flight_id": "CX111",
+          "departure_local": "2026-11-15T21:40:00+08:00",
+          "seats": 368,
+          "paid_members_on_flight": 14,
+          "member_seat_share": 0.038,
+          "cargo_plume_pax": 14,
+          "matches_cargo_plume_pax": true
+        },
+        {
+          "flight_id": "CX251",
+          "departure_local": "2026-11-15T23:40:00+08:00",
+          "seats": 368,
+          "paid_members_on_flight": 28,
+          "member_seat_share": 0.0761,
+          "cargo_plume_pax": 28,
+          "matches_cargo_plume_pax": true
+        },
+        {
+          "flight_id": "CX139",
+          "departure_local": "2026-11-16T08:40:00+08:00",
+          "seats": 280,
+          "paid_members_on_flight": 6,
+          "member_seat_share": 0.0214,
+          "cargo_plume_pax": 6,
+          "matches_cargo_plume_pax": true
+        },
+        {
+          "flight_id": "CX253",
+          "departure_local": "2026-11-16T09:30:00+08:00",
+          "seats": 280,
+          "paid_members_on_flight": 16,
+          "member_seat_share": 0.0571,
+          "cargo_plume_pax": 16,
+          "matches_cargo_plume_pax": true
+        },
+        {
+          "flight_id": "CX163",
+          "departure_local": "2026-11-16T20:20:00+08:00",
+          "seats": 312,
+          "paid_members_on_flight": 8,
+          "member_seat_share": 0.0256,
+          "cargo_plume_pax": 8,
+          "matches_cargo_plume_pax": true
+        },
+        {
+          "flight_id": "CX101",
+          "departure_local": "2026-11-16T20:55:00+08:00",
+          "seats": 300,
+          "paid_members_on_flight": 9,
+          "member_seat_share": 0.03,
+          "cargo_plume_pax": 9,
+          "matches_cargo_plume_pax": true
+        },
+        {
+          "flight_id": "CX255",
+          "departure_local": "2026-11-16T23:55:00+08:00",
+          "seats": 300,
+          "paid_members_on_flight": 12,
+          "member_seat_share": 0.04,
+          "cargo_plume_pax": 12,
+          "matches_cargo_plume_pax": true
+        },
+        {
+          "flight_id": "CX165",
+          "departure_local": "2026-11-17T08:40:00+08:00",
+          "seats": 280,
+          "paid_members_on_flight": 5,
+          "member_seat_share": 0.0179,
+          "cargo_plume_pax": 5,
+          "matches_cargo_plume_pax": true
+        },
+        {
+          "flight_id": "CX259",
+          "departure_local": "2026-11-17T09:30:00+08:00",
+          "seats": 260,
+          "paid_members_on_flight": 10,
+          "member_seat_share": 0.0385,
+          "cargo_plume_pax": 10,
+          "matches_cargo_plume_pax": true
+        },
+        {
+          "flight_id": "CX261",
+          "departure_local": "2026-11-17T23:40:00+08:00",
+          "seats": 294,
+          "paid_members_on_flight": 14,
+          "member_seat_share": 0.0476,
+          "cargo_plume_pax": 14,
+          "matches_cargo_plume_pax": true
+        },
+        {
+          "flight_id": "CX263",
+          "departure_local": "2026-11-18T09:30:00+08:00",
+          "seats": 334,
+          "paid_members_on_flight": 6,
+          "member_seat_share": 0.018,
+          "cargo_plume_pax": 6,
+          "matches_cargo_plume_pax": true
+        }
+      ]
+    },
+    "tracking": {
+      "T1_days_join_to_first_paid_p50": 31.36,
+      "T1_days_join_to_first_paid_p90": 85.19,
+      "T1_members_with_first_paid": 268,
+      "T2_service_booking_conversion": 0.8508,
+      "T3_invites_sent": 87,
+      "T3_accept_rate": 0.8046,
+      "T3_authorization_rate_among_accepted": 0.5,
+      "T3_authorization_rate_among_invited": 0.4023,
+      "T4_tier_counts": {
+        "Silver": 82,
+        "Green": 162,
+        "Gold": 51,
+        "Diamond": 12,
+        "Diamond Exec": 8
+      },
+      "T4_tier_usage_rate": {
+        "Silver": 0.8415,
+        "Green": 0.8333,
+        "Gold": 0.8824,
+        "Diamond": 0.9167,
+        "Diamond Exec": 1.0
+      },
+      "T5_alert_count": 0,
+      "T5_alerts": []
+    },
+    "commercial": {
+      "C1_service_revenue_hkd": 485250,
+      "C1_contribution_profit_hkd": 315412.5,
+      "C1_cost_assumption_locked": false,
+      "C1_paid_orders": 268,
+      "C2_incremental_ticket_revenue_completed_weeks_hkd": 227700,
+      "C2_incremental_ticket_revenue_partial_current_week_hkd": 6100,
+      "C3_promo_order_rate": 0.4104,
+      "C3_proposed_family_promo_orders": 79,
+      "C3_official_student_promo_orders": 31,
+      "C3_proposed_family_promo_revenue_hkd": 140650,
+      "C3_roi": null,
+      "C3_roi_note": "ROI left blank until assumed costs are locked."
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.tiers {
+  display: grid;
+  gap: 16px;
+  align-items: end;
+  min-height: 220px;
+}
+
+.tier {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.tier strong { margin-bottom: 6px; font-size: 18px; }
+
+.col {
+  width: 46%;
+  background: #e7eeea;
+  border-radius: 8px 8px 3px 3px;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  transition: height 400ms ease;
+}
+
+.fill {
+  display: block;
+  width: 100%;
+  background: var(--green);
+  transition: height 400ms ease;
+}
+
+.tier em { font-style: normal; margin-top: 8px; font-size: 13px; font-weight: 650; }
+
+.tier span { margin-top: 4px; color: var(--muted); font-size: 12px; }
