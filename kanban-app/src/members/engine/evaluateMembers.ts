@@ -1,4 +1,4 @@
-import { matchesAudience, isParentPersona, isStudentPersona } from "../config/audiences";
+import { matchesAudience, isBusinessPersona, isParentPersona, isStudentPersona } from "../config/audiences";
 import { BOOKMARKS } from "../config/bookmarks";
 import {
   BASE_TIERS,
@@ -19,7 +19,6 @@ import type {
   MemberFilter,
   MemberRecord,
   MemberSnapshot,
-  Persona,
   Ratio,
   ServiceOrderRecord,
   TierName,
@@ -31,7 +30,7 @@ import { addIsoDays, hktDateIso, hktDayStartMs, hktWeekStartMs } from "./hkt";
 import { roundTo, toCents } from "./round";
 
 const DEMO_ALIGNMENT_AT = "2026-11-10T09:30:00+08:00";
-const CORRIDOR_ORDER: readonly Corridor[] = ["HKG-LHR", "HKG-MEL", "HKG-SYD"];
+const CORRIDOR_ORDER: readonly Corridor[] = ["HKG-LHR"];
 
 function ratio(numerator: number, denominator: number): Ratio {
   return {
@@ -133,14 +132,6 @@ function addSlice(slice: IncrementSlice, amount: number, weekComplete: boolean):
   }
 }
 
-function singlePersona(personas: Set<Persona>): Persona | null {
-  if (personas.size !== 1) {
-    return null;
-  }
-  const [persona] = personas;
-  return persona ?? null;
-}
-
 function lagBins(lags: number[]): LagBin[] {
   const edges = LAG_BIN_EDGES_DAYS;
   const counts = edges.map(() => 0);
@@ -233,10 +224,9 @@ export function evaluateMembers(
 
   const corridors: CorridorUsage[] = CORRIDOR_ORDER.map((corridor) => {
     const indexes = membersByCorridor.get(corridor) ?? new Set<number>();
-    const studentPersonas = new Set<Persona>();
-    const parentPersonas = new Set<Persona>();
     let students = 0;
     let parents = 0;
+    let business = 0;
     for (const index of indexes) {
       const persona = snapshot.members[index]?.persona;
       if (!persona) {
@@ -244,10 +234,10 @@ export function evaluateMembers(
       }
       if (isStudentPersona(persona)) {
         students += 1;
-        studentPersonas.add(persona);
       } else if (isParentPersona(persona)) {
         parents += 1;
-        parentPersonas.add(persona);
+      } else if (isBusinessPersona(persona)) {
+        business += 1;
       }
     }
     return {
@@ -255,8 +245,7 @@ export function evaluateMembers(
       activeMembers: indexes.size,
       students,
       parents,
-      studentPersona: singlePersona(studentPersonas),
-      parentPersona: singlePersona(parentPersonas),
+      business,
     };
   });
 
@@ -279,6 +268,7 @@ export function evaluateMembers(
   const joinFilter = (member: MemberRecord) => inAudience(member);
   const studentsFilter = (member: MemberRecord) => joinFilter(member) && isStudentPersona(member.persona);
   const parentsFilter = (member: MemberRecord) => joinFilter(member) && isParentPersona(member.persona);
+  const businessFilter = (member: MemberRecord) => joinFilter(member) && isBusinessPersona(member.persona);
   const reach = eventMembers(snapshot, tMs, "reach", joinFilter);
   const startJoin = eventMembers(snapshot, tMs, "start_join", joinFilter);
   const completeJoin = eventMembers(snapshot, tMs, "complete_join", joinFilter);
@@ -366,6 +356,7 @@ export function evaluateMembers(
   const completed = emptySlice();
   const parents = emptySlice();
   const students = emptySlice();
+  const business = emptySlice();
   for (const week of snapshot.ticketIncrementWeekly) {
     if (week.weekStart > tDate) {
       continue;
@@ -382,6 +373,8 @@ export function evaluateMembers(
       addSlice(parents, week.incrementalRevenueHkd, weekComplete);
     } else if (isStudentPersona(week.persona)) {
       addSlice(students, week.incrementalRevenueHkd, weekComplete);
+    } else if (isBusinessPersona(week.persona)) {
+      addSlice(business, week.incrementalRevenueHkd, weekComplete);
     }
   }
 
@@ -414,14 +407,15 @@ export function evaluateMembers(
       tierUsed.set(tier, (tierUsed.get(tier) ?? 0) + 1);
     }
   }
-  const tierNames: TierName[] = [...BASE_TIERS];
-  const execCount = tierCounts.get("Diamond Exec") ?? 0;
-  if (tMs >= execEffectiveMs && execCount > 0) {
-    tierNames.push("Diamond Exec");
-  }
+  const tierNames: TierName[] = [...BASE_TIERS, "Diamond Exec"];
   const tiers = tierNames.map((tier) => {
     const count = tierCounts.get(tier) ?? 0;
-    return { tier, count, usage: ratio(tierUsed.get(tier) ?? 0, count) };
+    return {
+      tier,
+      count,
+      usage: ratio(tierUsed.get(tier) ?? 0, count),
+      notYetEffective: tier === "Diamond Exec" && tMs < execEffectiveMs,
+    };
   });
 
   const familyCodeOrders = new Map<string, number>(FAMILY_PROMO_CODES.map((code) => [code, 0]));
@@ -462,6 +456,7 @@ export function evaluateMembers(
       started: ratio(startJoin, reach),
       students: audienceJoin(snapshot, tMs, dayStart, weekStart, studentsFilter),
       parents: audienceJoin(snapshot, tMs, dayStart, weekStart, parentsFilter),
+      business: audienceJoin(snapshot, tMs, dayStart, weekStart, businessFilter),
       reach,
       startJoin,
       completeJoin,
@@ -486,6 +481,7 @@ export function evaluateMembers(
       weekToDateHkd: completed.weekToDateHkd,
       parents,
       students,
+      business,
     },
     lag: {
       ignoresAudienceFilter: false,

@@ -48,10 +48,10 @@ export function JoinSpark({ join }: { join: JoinView }) {
       <p className={styles.pair}>
         {t("mb.join.started")} {formatRatio(join.started, noSample)}
       </p>
-      <p className={styles.pair}>
-        {t("mb.join.studentRate")} {formatRatio(join.students.conversion, noSample)}
-        {" · "}
-        {t("mb.join.parentRate")} {formatRatio(join.parents.conversion, noSample)}
+      <p className={styles.rates}>
+        <span>{t("mb.join.studentRate")} {formatRatio(join.students.conversion, noSample)}</span>
+        <span>{t("mb.join.parentRate")} {formatRatio(join.parents.conversion, noSample)}</span>
+        <span>{t("mb.join.businessRate")} {formatRatio(join.business.conversion, noSample)}</span>
       </p>
       <div className={styles.funnel}>
         {funnel.map((step) => (

@@ -24,6 +24,16 @@
   transition: height 400ms ease;
 }
 
+.empty {
+  background: transparent;
+  border: 1px dashed #c5d5d0;
+}
+
+.exec .empty {
+  background: transparent;
+  border-color: #e4d3a8;
+}
+
 .fill {
   display: block;
   width: 100%;
@@ -47,6 +57,12 @@
 .exec .col { background: #f3ead0; }
 .exec .fill { background: linear-gradient(180deg, #d3a955 0%, #d3a955 16%, #1a1a1a 16%, #1a1a1a 100%); }
 
-.tier em { font-style: normal; margin-top: 8px; font-size: 13px; font-weight: 650; }
+.tier em {
+  font-style: normal;
+  margin-top: 8px;
+  font-size: 13px;
+  font-weight: 650;
+  text-align: center;
+}
 
 .tier span { margin-top: 4px; color: var(--muted); font-size: 12px; }

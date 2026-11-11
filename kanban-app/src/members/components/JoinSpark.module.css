@@ -1,9 +1,11 @@
 .metrics {
   display: grid;
-  grid-template-columns: 1.2fr 0.7fr 0.7fr 1.4fr;
-  gap: 8px;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px 16px;
   align-items: end;
 }
+
+.metrics p:first-child { grid-column: 1 / -1; }
 
 .metrics small,
 .pair,
@@ -20,6 +22,15 @@
 .metrics .sub { font-size: 22px; }
 
 .pair { margin: 8px 0 0; }
+
+.rates {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: 12px;
+}
 
 .funnel { display: flex; flex-direction: column; gap: 8px; margin-top: 14px; }
 

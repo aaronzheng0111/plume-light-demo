@@ -1,21 +1,25 @@
 import type { AudienceFilter, Persona } from "../types";
 
-export const STUDENT_PERSONAS: readonly Persona[] = ["student_uk", "student_au"];
+export const STUDENT_PERSONAS: readonly Persona[] = ["student"];
 
-export const PARENT_PERSONAS: readonly Persona[] = ["parent_hk", "parent_victoria"];
+export const PARENT_PERSONAS: readonly Persona[] = ["parent"];
 
-const PERSONA_SET = new Set<string>([...STUDENT_PERSONAS, ...PARENT_PERSONAS]);
+const PERSONA_SET = new Set<string>(["student", "parent", "business"]);
 
 export function isPersona(value: string): value is Persona {
   return PERSONA_SET.has(value);
 }
 
 export function isStudentPersona(persona: Persona): boolean {
-  return persona === "student_uk" || persona === "student_au";
+  return persona === "student";
 }
 
 export function isParentPersona(persona: Persona): boolean {
-  return persona === "parent_hk" || persona === "parent_victoria";
+  return persona === "parent";
+}
+
+export function isBusinessPersona(persona: Persona): boolean {
+  return persona === "business";
 }
 
 export function matchesAudience(persona: Persona, filter: AudienceFilter): boolean {
@@ -28,5 +32,5 @@ export function matchesAudience(persona: Persona, filter: AudienceFilter): boole
   if (filter === "parents") {
     return isParentPersona(persona);
   }
-  return persona === filter;
+  return isBusinessPersona(persona);
 }

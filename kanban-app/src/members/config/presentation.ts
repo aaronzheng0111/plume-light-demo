@@ -11,6 +11,6 @@ export const DEMO_UNIT_PRICE_HKD = {
 
 export const FAMILY_PROMO_CODES = ["PLUME-ENROL", "PLUME-HOLIDAY", "PLUME-GRAD"] as const;
 
-export const OFFICIAL_PROMO_CODES = ["HKSTUDENT", "GBASTU"] as const;
+export const OFFICIAL_PROMO_CODES = ["HKSTUDENT"] as const;
 
 export const BASE_TIERS = ["Green", "Silver", "Gold", "Diamond"] as const;

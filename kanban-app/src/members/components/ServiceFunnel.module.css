@@ -22,7 +22,7 @@
 
 .funnel { display: flex; flex-direction: column; gap: 4px; margin-top: 16px; }
 
-.step { display: grid; grid-template-columns: 120px 1fr 52px; gap: 12px; align-items: center; }
+.step { display: grid; grid-template-columns: minmax(72px, 108px) minmax(0, 1fr) 44px; gap: 10px; align-items: center; }
 
 .step span { font-size: 13px; color: var(--muted); }
 
@@ -46,7 +46,7 @@
 
 .step b { text-align: right; font-size: 18px; }
 
-.drop { margin: 2px 0 6px 132px; }
+.drop { margin: 2px 0 6px 118px; }
 
 @media (max-width: 720px) {
   .metrics { grid-template-columns: 1fr; }

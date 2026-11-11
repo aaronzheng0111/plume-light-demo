@@ -1,24 +1,15 @@
 import { useI18n } from "../../i18n/useI18n";
 import { formatHkd } from "../format";
-import type { Corridor, IncrementView } from "../types";
+import type { IncrementView } from "../types";
 import { MemberCard } from "./MemberCard";
 import styles from "./IncrementBars.module.css";
 
-const CORRIDORS: readonly Corridor[] = ["HKG-LHR", "HKG-MEL", "HKG-SYD"];
-
-export function IncrementBars({
-  increment,
-  corridor,
-  onCorridorChange,
-}: {
-  increment: IncrementView;
-  corridor: Corridor | "all";
-  onCorridorChange: (corridor: Corridor | "all") => void;
-}) {
+export function IncrementBars({ increment }: { increment: IncrementView }) {
   const { t } = useI18n();
   const rows = [
-    { label: t("mb.inc.parents"), slice: increment.parents },
     { label: t("mb.inc.students"), slice: increment.students },
+    { label: t("mb.inc.parents"), slice: increment.parents },
+    { label: t("mb.inc.business"), slice: increment.business },
   ];
   const max = Math.max(
     ...rows.map((row) => row.slice.completedHkd + row.slice.weekToDateHkd),
@@ -56,21 +47,6 @@ export function IncrementBars({
       <div className={styles.key}>
         <span><i className={styles.done} />{t("mb.inc.completed")}</span>
         <span><i className={styles.hatch} />{t("mb.inc.partial")}</span>
-      </div>
-      <div className={styles.segs}>
-        <button type="button" className={corridor === "all" ? styles.on : ""} onClick={() => onCorridorChange("all")}>
-          {t("mb.inc.all")}
-        </button>
-        {CORRIDORS.map((item) => (
-          <button
-            key={item}
-            type="button"
-            className={corridor === item ? styles.on : ""}
-            onClick={() => onCorridorChange(item)}
-          >
-            {item}
-          </button>
-        ))}
       </div>
       <p className={styles.note}>{t("mb.inc.note")}</p>
     </MemberCard>

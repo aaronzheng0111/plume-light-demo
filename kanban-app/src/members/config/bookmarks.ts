@@ -8,14 +8,11 @@ export interface Bookmark {
 
 export const BOOKMARKS: readonly Bookmark[] = [
   { id: "A", at: "2026-06-17T09:30:00+08:00" },
-  { id: "M", at: "2026-07-08T09:30:00+08:00" },
   { id: "B", at: "2026-08-12T09:30:00+08:00" },
   { id: "C", at: "2026-09-16T09:30:00+08:00" },
   { id: "D", at: "2026-10-21T09:30:00+08:00" },
   { id: "P", at: "2026-11-10T09:30:00+08:00" },
   { id: "E", at: "2027-01-13T09:30:00+08:00" },
-  { id: "S", at: "2027-01-20T09:30:00+08:00" },
-  { id: "F", at: "2027-02-24T09:30:00+08:00" },
 ];
 
 export const DEFAULT_BOOKMARK_ID: BookmarkId = "P";

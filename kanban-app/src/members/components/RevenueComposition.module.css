@@ -1,9 +1,18 @@
+.layout {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.82fr) minmax(0, 1.18fr);
+  gap: 8px 28px;
+  align-items: center;
+}
+
 .metrics {
   display: grid;
-  grid-template-columns: 1.45fr 1.25fr 1.05fr 0.75fr;
+  grid-template-columns: 1fr 1fr;
   gap: 8px;
   align-items: end;
 }
+
+.lead { grid-column: 1 / -1; }
 
 .metrics p { margin: 0; }
 
@@ -45,6 +54,8 @@
 
 .support { font-size: 22px; }
 
+.composition .note:first-child { margin-top: 0; }
+
 .note { margin: 8px 0 0; }
 
 .bar,
@@ -71,7 +82,7 @@
   background: repeating-linear-gradient(135deg, #f3ecd9, #f3ecd9 3px, #e4b46c 3px, #e4b46c 6px);
 }
 
-.key { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 8px; }
+.key { display: flex; flex-direction: column; align-items: flex-start; gap: 6px; margin-top: 8px; }
 
 .key i {
   width: 8px;
@@ -84,8 +95,7 @@
 .key em { font-style: normal; margin-left: 6px; }
 
 @media (max-width: 720px) {
-  .metrics { grid-template-columns: 1fr 1fr; }
-  .lead { grid-column: 1 / -1; }
+  .layout { grid-template-columns: 1fr; }
   .lead b { font-size: 34px; }
   .accent b { font-size: 24px; }
 }

@@ -7,19 +7,7 @@ import type { AudienceFilter, BookmarkId } from "../types";
 import { HoverLabel } from "./HoverLabel";
 import styles from "./MemberControlBar.module.css";
 
-const PRIMARY: AudienceFilter[] = ["all", "students", "parents"];
-const STUDENT_DETAIL: AudienceFilter[] = ["students", "student_uk", "student_au"];
-const PARENT_DETAIL: AudienceFilter[] = ["parents", "parent_hk", "parent_victoria"];
-
-function primarySelected(filter: AudienceFilter, audience: AudienceFilter): boolean {
-  if (filter === "students") {
-    return STUDENT_DETAIL.includes(audience);
-  }
-  if (filter === "parents") {
-    return PARENT_DETAIL.includes(audience);
-  }
-  return audience === "all";
-}
+const FILTERS: AudienceFilter[] = ["all", "students", "parents", "business"];
 
 export function MemberControlBar({
   bookmarkId,
@@ -35,11 +23,6 @@ export function MemberControlBar({
   onAudienceChange: (audience: AudienceFilter) => void;
 }) {
   const { t } = useI18n();
-  const showStudents =
-    audience === "students" || audience === "student_uk" || audience === "student_au";
-  const showParents =
-    audience === "parents" || audience === "parent_hk" || audience === "parent_victoria";
-  const detail = showStudents ? STUDENT_DETAIL : showParents ? PARENT_DETAIL : [];
 
   return (
     <div className={styles.bar}>
@@ -62,31 +45,17 @@ export function MemberControlBar({
         ))}
       </div>
       <div className={styles.filters}>
-        {PRIMARY.map((filter) => (
+        {FILTERS.map((filter) => (
           <button
             key={filter}
             type="button"
-            className={primarySelected(filter, audience) ? styles.on : ""}
+            className={audience === filter ? styles.on : ""}
             onClick={() => onAudienceChange(filter)}
           >
             {t(audienceKey(filter))}
           </button>
         ))}
       </div>
-      {detail.length > 0 ? (
-        <div className={styles.detail}>
-          {detail.map((filter) => (
-            <button
-              key={filter}
-              type="button"
-              className={audience === filter ? styles.on : ""}
-              onClick={() => onAudienceChange(filter)}
-            >
-              {t(audienceKey(filter))}
-            </button>
-          ))}
-        </div>
-      ) : null}
     </div>
   );
 }

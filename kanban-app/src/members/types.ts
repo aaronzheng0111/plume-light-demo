@@ -1,10 +1,10 @@
-export type BookmarkId = "A" | "M" | "B" | "C" | "D" | "P" | "E" | "S" | "F";
+export type BookmarkId = "A" | "B" | "C" | "D" | "P" | "E";
 
-export type Persona = "student_uk" | "student_au" | "parent_victoria" | "parent_hk";
+export type Persona = "student" | "parent" | "business";
 
-export type AudienceFilter = "all" | "students" | "parents" | Persona;
+export type AudienceFilter = "all" | "students" | "parents" | "business";
 
-export type Corridor = "HKG-LHR" | "HKG-MEL" | "HKG-SYD";
+export type Corridor = "HKG-LHR";
 
 export type FamilyLinkStatus =
   | "cancelled"
@@ -98,8 +98,7 @@ export interface CorridorUsage {
   activeMembers: number;
   students: number;
   parents: number;
-  studentPersona: Persona | null;
-  parentPersona: Persona | null;
+  business: number;
 }
 
 export interface MapView {
@@ -145,6 +144,7 @@ export interface JoinView {
   started: Ratio;
   students: AudienceJoin;
   parents: AudienceJoin;
+  business: AudienceJoin;
   reach: number;
   startJoin: number;
   completeJoin: number;
@@ -195,6 +195,7 @@ export interface IncrementView {
   weekToDateHkd: number;
   parents: IncrementSlice;
   students: IncrementSlice;
+  business: IncrementSlice;
 }
 
 export interface LagBin {
@@ -217,6 +218,7 @@ export interface TierColumn {
   tier: TierName;
   count: number;
   usage: Ratio;
+  notYetEffective: boolean;
 }
 
 export interface TierView {
@@ -257,7 +259,7 @@ export interface MemberBoardView {
 }
 
 export function isCorridor(value: string): value is Corridor {
-  return value === "HKG-LHR" || value === "HKG-MEL" || value === "HKG-SYD";
+  return value === "HKG-LHR";
 }
 
 export function isTierName(value: string): value is TierName {

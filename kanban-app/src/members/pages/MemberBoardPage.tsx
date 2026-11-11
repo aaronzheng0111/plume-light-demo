@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useI18n } from "../../i18n/useI18n";
 import { bookmarkById, DEFAULT_BOOKMARK_ID } from "../config/bookmarks";
 import { useMemberBoard } from "../services/useMemberBoard";
-import type { AudienceFilter, BookmarkId, Corridor } from "../types";
+import type { AudienceFilter, BookmarkId } from "../types";
 import { FamilyFlow } from "../components/FamilyFlow";
 import { IncrementBars } from "../components/IncrementBars";
 import { JoinSpark } from "../components/JoinSpark";
@@ -19,9 +19,8 @@ export function MemberBoardPage() {
   const { t } = useI18n();
   const [bookmarkId, setBookmarkId] = useState<BookmarkId>(DEFAULT_BOOKMARK_ID);
   const [audience, setAudience] = useState<AudienceFilter>("all");
-  const [corridor, setCorridor] = useState<Corridor | "all">("all");
   const bookmark = bookmarkById(bookmarkId);
-  const { viewModel, isPending, error } = useMemberBoard(bookmark.at, { audience, corridor });
+  const { viewModel, isPending, error } = useMemberBoard(bookmark.at, { audience, corridor: "all" });
 
   return (
     <div className={styles.page}>
@@ -37,22 +36,26 @@ export function MemberBoardPage() {
       {isPending || !viewModel ? (
         <p className={styles.note}>{t("mb.loading")}</p>
       ) : (
-        <>
+        <div className={styles.board}>
+          <div className={styles.wide}>
+            <RevenueComposition revenue={viewModel.revenue} audience={audience} />
+          </div>
           <RouteMap
             map={viewModel.map}
-            corridor={corridor}
             showScopeAll={audience !== "all"}
-            onCorridorChange={setCorridor}
           />
           <JoinSpark join={viewModel.join} />
-          <RevenueComposition revenue={viewModel.revenue} audience={audience} />
           <ServiceFunnel service={viewModel.service} />
-          <FamilyFlow family={viewModel.family} audience={audience} />
-          <IncrementBars increment={viewModel.increment} corridor={corridor} onCorridorChange={setCorridor} />
+          <IncrementBars increment={viewModel.increment} />
+          <div className={styles.wide}>
+            <FamilyFlow family={viewModel.family} audience={audience} />
+          </div>
           <LagRuler lag={viewModel.lag} />
           <TierColumns tiers={viewModel.tiers} />
-          <PromoSplit promo={viewModel.promo} audience={audience} />
-        </>
+          <div className={styles.wide}>
+            <PromoSplit promo={viewModel.promo} audience={audience} />
+          </div>
+        </div>
       )}
     </div>
   );
