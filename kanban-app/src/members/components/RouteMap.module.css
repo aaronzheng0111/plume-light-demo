@@ -89,3 +89,9 @@
 .note { color: var(--muted); margin-top: 4px; }
 
 .on { background: var(--pale); }
+
+@media (max-width: 720px) {
+  .routes { grid-template-columns: 1fr; }
+  .route + .route { border-left: 0; }
+  .head { align-items: flex-start; gap: 8px; }
+}

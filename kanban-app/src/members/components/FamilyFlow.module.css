@@ -15,6 +15,7 @@
   font-size: 28px;
   line-height: 1.05;
   letter-spacing: -0.03em;
+  overflow-wrap: anywhere;
 }
 
 .metrics .mid { font-size: 18px; }
@@ -66,5 +67,10 @@
 .gaps p { margin: 0; padding: 12px 8px 0; }
 
 .gaps b { display: block; font-size: 28px; line-height: 1; }
+
+@media (max-width: 720px) {
+  .metrics { grid-template-columns: 1fr 1fr; }
+  .layout { grid-template-columns: 1fr; }
+}
 
 .gaps p:nth-child(1) b { color: #8a5a12; }

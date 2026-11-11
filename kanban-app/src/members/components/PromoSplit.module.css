@@ -12,6 +12,7 @@
 .row { margin-top: 14px; }
 
 .top { display: flex; justify-content: space-between; gap: 12px; margin-bottom: 6px; font-size: 13px; }
+.top b { text-align: right; }
 
 .track {
   height: 14px;

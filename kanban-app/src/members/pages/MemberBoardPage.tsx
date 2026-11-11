@@ -35,7 +35,7 @@ export function MemberBoardPage() {
       />
       {error ? <p className={styles.error}>{error.message}</p> : null}
       {isPending || !viewModel ? (
-        <p className={styles.note}>…</p>
+        <p className={styles.note}>{t("mb.loading")}</p>
       ) : (
         <>
           <RouteMap

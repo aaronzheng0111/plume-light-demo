@@ -26,21 +26,21 @@ export function RevenueComposition({
   return (
     <MemberCard questionKey="mb.q1" showScopeAll={audience !== "all"}>
       <div className={styles.metrics}>
+        <p className={styles.lead}>
+          <small>{t("mb.rev.profit")}</small>
+          <b>{formatHkd(revenue.contributionProfitHkd)}</b>
+        </p>
+        <p className={styles.accent}>
+          <small>{t("mb.rev.avgProfit")}</small>
+          <b>{revenue.averageProfitHkd == null ? noSample : formatHkd(revenue.averageProfitHkd)}</b>
+        </p>
         <p>
           <small>{t("mb.rev.revenue")}</small>
-          <b>{formatHkd(revenue.revenueHkd)}</b>
-        </p>
-        <p>
-          <small>{t("mb.rev.profit")}</small>
-          <b className={styles.mid}>{formatHkd(revenue.contributionProfitHkd)}</b>
-        </p>
-        <p>
-          <small>{t("mb.rev.avgProfit")}</small>
-          <b className={styles.mid}>{revenue.averageProfitHkd == null ? noSample : formatHkd(revenue.averageProfitHkd)}</b>
+          <b className={styles.support}>{formatHkd(revenue.revenueHkd)}</b>
         </p>
         <p>
           <small>{t("mb.rev.orders")}</small>
-          <b className={styles.mid}>{revenue.paidOrders}</b>
+          <b className={styles.support}>{revenue.paidOrders}</b>
         </p>
       </div>
       <p className={styles.note}>
@@ -65,6 +65,10 @@ export function RevenueComposition({
       <div className={styles.hatchline}>
         <i className={styles.gain} style={{ width: `${profitShare * 100}%` }} />
         <i className={styles.cost} style={{ width: `${revenue.tempCostRatio * 100}%` }} />
+      </div>
+      <div className={styles.key}>
+        <span><i className={styles.gain} />{t("mb.rev.profit")}</span>
+        <span><i className={styles.cost} />{t("mb.rev.estimatedCost")}</span>
       </div>
       <p className={styles.note}>{t("mb.costPlaceholder")}</p>
     </MemberCard>

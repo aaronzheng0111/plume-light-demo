@@ -1,9 +1,11 @@
 .metrics {
   display: grid;
-  grid-template-columns: 1.3fr 1fr 1fr 0.7fr;
+  grid-template-columns: 1.45fr 1.25fr 1.05fr 0.75fr;
   gap: 8px;
   align-items: end;
 }
+
+.metrics p { margin: 0; }
 
 .metrics small,
 .note,
@@ -11,12 +13,37 @@
 
 .metrics b {
   display: block;
-  font-size: 34px;
+  font-size: 22px;
   line-height: 1;
   letter-spacing: -0.03em;
+  font-variant-numeric: tabular-nums;
+  overflow-wrap: anywhere;
 }
 
-.metrics .mid { font-size: 22px; }
+.lead {
+  background: #e7f3ec;
+  border-radius: 12px;
+  padding: 8px 12px 10px;
+  box-shadow: inset 3px 0 0 var(--ok);
+}
+
+.lead small,
+.accent small {
+  color: var(--green);
+  font-weight: 700;
+}
+
+.lead b {
+  font-size: 40px;
+  color: var(--green);
+}
+
+.accent b {
+  font-size: 28px;
+  color: var(--green);
+}
+
+.support { font-size: 22px; }
 
 .note { margin: 8px 0 0; }
 
@@ -29,6 +56,8 @@
   overflow: hidden;
   background: #e7eeea;
 }
+
+.hatchline { height: 18px; }
 
 .seg,
 .gain,
@@ -53,3 +82,10 @@
 }
 
 .key em { font-style: normal; margin-left: 6px; }
+
+@media (max-width: 720px) {
+  .metrics { grid-template-columns: 1fr 1fr; }
+  .lead { grid-column: 1 / -1; }
+  .lead b { font-size: 34px; }
+  .accent b { font-size: 24px; }
+}

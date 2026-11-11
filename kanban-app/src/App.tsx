@@ -30,7 +30,7 @@ function readBoard(): BoardId {
 }
 
 function KanbanShell() {
-  const { t } = useI18n();
+  const { t, locale } = useI18n();
   const [board, setBoard] = useState<BoardId>(readBoard);
   const [view, setView] = useState<"overview" | "detail">("overview");
   const [selectedFlightId, setSelectedFlightId] = useState<string | null>(null);
@@ -41,6 +41,10 @@ function KanbanShell() {
   const [sector, setSector] = useState<string>(DEFAULT_SECTOR);
   const [events, setEvents] = useState<FeedbackEvent[]>([]);
   const [live, setLive] = useState(true);
+
+  useEffect(() => {
+    document.title = board === "members" ? `Plume Light · ${t("mb.title")}` : t("kb.brand.title");
+  }, [board, locale, t]);
 
   useEffect(() => {
     if (!live || board !== "cargo") {
