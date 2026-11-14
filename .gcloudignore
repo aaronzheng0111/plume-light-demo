@@ -1,0 +1,16 @@
+.git
+.DS_Store
+.env
+.env.*
+**/__pycache__/
+**/*.pyc
+node_modules/
+.venv/
+archive/
+doc/
+!package.json
+!package-lock.json
+!vite.config.ts
+!tsconfig.json
+!src/
+!src/**
